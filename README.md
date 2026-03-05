@@ -89,7 +89,7 @@ A equipe **404 Not Found** é constituída de alunos do segundo semestre do curs
 | Scrum Master  | Felipe Faria Machado          | [GitHub](https://github.com/felipefmac) / [LinkedIn](https://www.linkedin.com/in/felipefariamachado) |
 | Dev Team      | Ariana Ferreira dos Santos    | [GitHub](https://github.com/arianaferresan) / [LinkedIn](https://br.linkedin.com/in/arianaferreira) |
 | Dev Team      | Eloah Sousa da Silva          | [GitHub](https://github.com/eloahsousaa) / [LinkedIn](https://www.linkedin.com/in/eloah-sousa-650038349/) |
-| Dev Team      | Lucas Monteiro                | [GitHub](https://github.com/lealdev7) / [LinkedIn] () |
+| Dev Team      | Lucas Monteiro                | [GitHub](https://github.com/lealdev7) / [LinkedIn](https://www.linkedin.com/in/lucasmonteirocorreia)
 | Dev Team      | Pedro Gonçalves Sampaio       | [GitHub](https://github.com/PedroSmp) / [LinkedIn](https://www.linkedin.com/in/pedro-sampaio-463a77375) |
 | Dev Team      | William Max dos Santos Silva  | [GitHub](https://github.com/WilliamM4x) / [LinkedIn](https://www.linkedin.com/in/william-max-7b8036140/) |
 
