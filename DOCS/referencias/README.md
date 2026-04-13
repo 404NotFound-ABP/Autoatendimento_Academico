@@ -2,7 +2,6 @@
 
 ## Documentos Acadêmicos Base
 
-Os arquivos abaixo permanecem na pasta `2dsm ABP/arquivos/` porque fazem parte da base documental utilizada pelo projeto:
 
 - `Calendário Acadêmico 2026.pdf`
 - `DSM - Horário 2026-1.pdf`
