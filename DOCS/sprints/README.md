@@ -6,9 +6,9 @@ As sprints foram separadas do `README.md` principal. Cada ciclo possui sua próp
 
 | Sprint | Status | Documento |
 | --- | --- | --- |
-| Sprint 01 | Planejamento | [Abrir](sprint-01/README.md) |
-| Sprint 02 | Planejamento | [Abrir](sprint-02/README.md) |
-| Sprint 03 | Planejamento | [Abrir](sprint-03/README.md) |
+| Sprint 01 | ![Status](https://img.shields.io/badge/Status-Em%20andamento-FACC15) | [Abrir](sprint-01/README.md) |
+| Sprint 02 | ![Status](https://img.shields.io/badge/Status-Planejamento-3B82F6) | [Abrir](sprint-02/README.md) |
+| Sprint 03 | ![Status](https://img.shields.io/badge/Status-Planejamento-3B82F6) | [Abrir](sprint-03/README.md) |
 
 ## Como Preencher
 
