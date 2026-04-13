@@ -13,13 +13,13 @@
 
 ---
 
-## Visão Geral
+## Visão Geral 📝
 
 O **FAQtec** foi criado para centralizar dúvidas frequentes da Secretaria Acadêmica em uma única plataforma, reduzindo a sobrecarga do atendimento manual e melhorando o acesso a informações institucionais por alunos e público externo.
 
 A aplicação organiza o atendimento em fluxos guiados, consultas objetivas e respostas baseadas em documentos oficiais, tornando o processo mais claro, rápido e rastreável.
 
-## Problema
+## Problema 🧩
 
 Atualmente, grande parte das orientações acadêmicas depende de atendimento humano para esclarecer temas recorrentes, como:
 
@@ -32,7 +32,7 @@ Atualmente, grande parte das orientações acadêmicas depende de atendimento hu
 
 Esse modelo aumenta o tempo de resposta, gera retrabalho e dificulta a padronização das informações repassadas.
 
-## Solução Proposta
+## Solução Proposta ✅
 
 O FAQtec propõe uma aplicação web de autoatendimento capaz de:
 
@@ -42,7 +42,7 @@ O FAQtec propõe uma aplicação web de autoatendimento capaz de:
 - Exibir evidências documentais vinculadas às respostas;
 - Encaminhar dúvidas não resolvidas para a Secretaria Acadêmica.
 
-## Documentação
+## Documentação 📁
 
 Toda a documentação do projeto está centralizada na pasta [DOCS](DOCS/README.md).
 
@@ -64,21 +64,18 @@ Toda a documentação do projeto está centralizada na pasta [DOCS](DOCS/README.
   </a>
 </p>
 
-### Links Rápidos
+### Links Rápidos 📎
 
 | Categoria | Acesso |
 | --- | --- |
 | Índice geral | [DOCS/README.md](DOCS/README.md) |
 | Requisitos | [DOCS/produto/requisitos.md](DOCS/produto/requisitos.md) |
-| Backlog do produto | [DOCS/produto/backlog-do-produto.md](DOCS/produto/backlog-do-produto.md) |
-| Backlog detalhado | [DOCS/produto/backlog-detalhado.md](DOCS/produto/backlog-detalhado.md) |
 | User stories | [DOCS/produto/user-stories.md](DOCS/produto/user-stories.md) |
 | Definition of Ready | [DOCS/processo/definition-of-ready.md](DOCS/processo/definition-of-ready.md) |
 | Definition of Done | [DOCS/processo/definition-of-done.md](DOCS/processo/definition-of-done.md) |
-| Sprints | [DOCS/sprints/README.md](DOCS/sprints/README.md) |
 | Referências e anexos | [DOCS/referencias/README.md](DOCS/referencias/README.md) |
 
-## Estrutura do Repositório
+## Estrutura do Repositório 📂
 
 ```text
 .
@@ -93,7 +90,7 @@ Toda a documentação do projeto está centralizada na pasta [DOCS](DOCS/README.
 └── README.md
 ```
 
-### Organização das Pastas
+### Organização das Pastas 📋
 
 - `DOCS/`: documentação funcional, processual e acompanhamento das sprints.
 - `2dsm ABP/app - aluno/`: aplicação principal com frontend, backend e banco.
@@ -107,7 +104,7 @@ A documentação técnica da aplicação permanece no módulo principal:
 - [README do banco](2dsm%20ABP/app%20-%20aluno/database/README.md)
 - [README dos scripts SQL](2dsm%20ABP/app%20-%20aluno/database/init/README.md)
 
-## Tecnologias Utilizadas
+## Tecnologias Utilizadas 💻
 
 <p align="center">
   <img alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
@@ -126,7 +123,7 @@ A documentação técnica da aplicação permanece no módulo principal:
   <img alt="Docker" src="https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
 </p>
 
-## Status do Projeto
+## Status do Projeto 📌
 
 <p align="center">
   <img alt="Status" src="https://img.shields.io/badge/Status-Em%20organiza%C3%A7%C3%A3o%20e%20desenvolvimento-2563EB?style=for-the-badge" />
@@ -134,7 +131,7 @@ A documentação técnica da aplicação permanece no módulo principal:
 
 Projeto acadêmico em desenvolvimento, com foco na construção de uma plataforma de autoatendimento confiável, organizada e sustentada por documentação centralizada.
 
-## Equipe
+## Equipe 💼
 
 A equipe do projeto é formada por alunos do curso de Desenvolvimento de Software Multiplataforma.
 
