@@ -71,8 +71,6 @@ Toda a documentação do projeto está centralizada na pasta [DOCS](DOCS/README.
 | Categoria | Acesso |
 | --- | --- |
 | Índice geral | [DOCS/README.md](DOCS/README.md) |
-| Requisitos | [DOCS/produto/requisitos.md](DOCS/produto/requisitos.md) |
-| User stories | [DOCS/produto/user-stories.md](DOCS/produto/user-stories.md) |
 | Definition of Ready | [DOCS/processo/definition-of-ready.md](DOCS/processo/definition-of-ready.md) |
 | Definition of Done | [DOCS/processo/definition-of-done.md](DOCS/processo/definition-of-done.md) |
 | Referências e anexos | [DOCS/referencias/README.md](DOCS/referencias/README.md) |
@@ -119,8 +117,6 @@ O backlog do projeto está organizado em documentos complementares para facilita
 │   │   ├── frontend/
 │   │   └── README.md
 │   └── arquivos/
-├── teste.html
-├── teste_teste.html
 └── README.md
 ```
 
