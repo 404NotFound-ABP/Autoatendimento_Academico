@@ -14,7 +14,7 @@
 
 Concluir a implementação integrada do sistema, fechando a área interna, a infraestrutura final, a validação técnica e a documentação complementar.
 
-## Escopo Comprometido
+## Sprint Backlog
 
 | ID | Frente | Item | Prioridade | Recorte da Sprint |
 | --- | --- | --- | --- | --- |
@@ -44,6 +44,10 @@ Concluir a implementação integrada do sistema, fechando a área interna, a inf
 ## Tasks
 
 - O detalhamento das tasks e a explosão em cards será feito posteriormente com o Scrum Master.
+
+## Burndown
+
+- O burndown será feito posteriormente com o Scrum Master.
 
 ## Riscos e Impedimentos
 

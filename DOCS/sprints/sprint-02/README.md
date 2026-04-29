@@ -14,7 +14,7 @@
 
 Finalizar o núcleo funcional do sistema, consolidando frontend e backend e preparando a integração principal com a base de dados e as regras de acesso.
 
-## Escopo Comprometido
+## Sprint Backlog
 
 | ID | Frente | Item | Prioridade | Recorte da Sprint |
 | --- | --- | --- | --- | --- |
@@ -44,6 +44,10 @@ Finalizar o núcleo funcional do sistema, consolidando frontend e backend e prep
 ## Tasks
 
 - O detalhamento das tasks e a explosão em cards será feito posteriormente com o Scrum Master.
+
+## Burndown
+
+- O burndown será feito posteriormente com o Scrum Master.
 
 ## Riscos e Impedimentos
 
