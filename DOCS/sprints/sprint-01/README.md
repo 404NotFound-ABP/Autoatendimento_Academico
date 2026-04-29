@@ -71,7 +71,7 @@ Use esta tabela para acompanhar todas as tasks do projeto. Marque ⬜ para pende
 
 ## Burndown
 
-<img width="1595" height="659" alt="burndown sprint 01" src="" />
+<img width="1595" height="659" alt="burndown sprint 01" src="https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/sprints/sprint-01/burndown.png" />
 
 ## Observações
 
