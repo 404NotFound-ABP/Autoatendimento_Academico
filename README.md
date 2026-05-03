@@ -102,29 +102,34 @@ O backlog do projeto está organizado em documentos complementares para facilita
 
 ```text
 .
-├── DOCS/
-│   ├── processo/
-│   ├── produto/
-│   ├── referencias/
-│   ├── sprints/
-│   └── README.md
-├── 2dsm ABP/
-│   ├── app - aluno/
-│   │   ├── .gitignore
-│   │   ├── backend/
-│   │   ├── database/
-│   │   ├── docker-compose.yml
-│   │   ├── frontend/
-│   │   └── README.md
-│   └── arquivos/
+2dsm ABP
+|   ├── backend
+|   │   ├── data
+|   │   └── src
+|   │       ├── asset
+|   │       │   └── uploads
+|   │       ├── controllers
+|   │       ├── routes
+|   │       └── server
+|   │           └── config
+|   ├── frontend
+|   ├── .env
+|   ├── docker-compose
+|   └── init
 └── README.md
 ```
 
 ### Organização das Pastas 📋
 
-- `DOCS/`: documentação funcional, processual e acompanhamento das sprints.
-- `2dsm ABP/app - aluno/`: aplicação principal com frontend, backend, banco e orquestração local.
-- `2dsm ABP/arquivos/`: documentos acadêmicos utilizados como base de conhecimento.
+- `2dsm ABP/`: Aplicação principal com frontend, backend, banco e orquestração local.
+- `2dsm ABP/backend/src/uploads`: Pasta oclearnde serão armazenados os chunks.
+- `2dsm ABP/init`: DDL e seed do banco de dados.
+
+### End-Points Back-End [PORT: 3666] 🚪
+- `Rota SWAGGER`: http://localhost:3666/api-docs/
+- `Rota BackEnd publico`: http://localhost:3666/api/  
+- `Rota BackEnd ADMIN`: http://localhost:3666/admin/  
+
 
 <a id="aplicacao"></a>
 
