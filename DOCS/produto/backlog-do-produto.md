@@ -21,32 +21,32 @@ Este documento resume o backlog principal do projeto e aponta para os documentos
 
 | ID | Título | Prioridade | Requisitos |
 | --- | --- | --- | --- |
-| US01 | Escolha inicial de curso ou perfil | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF01 |
-| US02 | Navegação por menus e submenus | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF01 |
-| US03 | Consultas diretas no autoatendimento | ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow) | RF01, RF02 |
-| US04 | Respostas resumidas e padronizadas | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF01, RF02 |
-| US05 | Evidências documentais vinculadas | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF02 |
-| US06 | Perfis de acesso do sistema | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF03 |
-| US07 | Gestão de menus e respostas pelo administrador | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF04 |
-| US08 | Gestão de documentos, chunks e metadados | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF02, RF04 |
-| US09 | Gestão de usuários da secretaria | ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow) | RF04 |
-| US10 | Encaminhamento de perguntas para a secretaria | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF05 |
-| US11 | Acompanhamento e atualização das dúvidas recebidas | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF06 |
-| US12 | Avaliação de satisfação do atendimento | ![Prioridade Baixa](https://img.shields.io/badge/Prioridade-Baixa-green) | RF07 |
-| US13 | Registro e consulta de logs administrativos | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF04, RF08 |
-| US14 | Login, JWT e autorização por papel | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF09, RF10, RF11 |
+| DW01 | Escolha inicial de curso ou perfil | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF01 |
+| DW02 | Navegação por menus e submenus | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF01 |
+| DW03 | Consultas diretas no autoatendimento | ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow) | RF01, RF02 |
+| DW04 | Respostas resumidas e padronizadas | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF01, RF02 |
+| DW05 | Evidências documentais vinculadas | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF02 |
+| TP01 | Perfis de acesso do sistema | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF03 |
+| TP02 | Gestão de menus e respostas pelo administrador | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF04 |
+| BD01 | Gestão de documentos, chunks e metadados | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF02, RF04 |
+| TP03 | Gestão de usuários da secretaria | ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow) | RF04 |
+| TP04 | Encaminhamento de perguntas para a secretaria | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF05 |
+| TP05 | Acompanhamento e atualização das dúvidas recebidas | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF06 |
+| DW06 | Avaliação de satisfação do atendimento | ![Prioridade Baixa](https://img.shields.io/badge/Prioridade-Baixa-green) | RF07 |
+| BD02 | Registro e consulta de logs administrativos | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF04, RF08 |
+| TP06 | Login, JWT e autorização por papel | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | RF09, RF10, RF11 |
 
 ## Itens Técnicos e de Entrega
 
 | ID | Título | Prioridade |
 | --- | --- | --- |
-| BT01 | Modelagem e carga inicial do banco PostgreSQL | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) |
-| BT02 | Frontend em React com TypeScript | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) |
-| BT03 | API em Node.js com TypeScript | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) |
-| BT04 | Ambiente completo com Docker Compose | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) |
-| BT05 | Documentação e diagramas UML | ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow) |
-| BT06 | Segurança com hash e JWT | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) |
-| BT07 | Validação básica de desempenho | ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow) |
+| BD03 | Modelagem e carga inicial do banco PostgreSQL | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) |
+| DW07 | Frontend em React com TypeScript | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) |
+| TP07 | API em Node.js com TypeScript | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) |
+| TP08 | Ambiente completo com Docker Compose | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) |
+| ES01 | Documentação e diagramas UML | ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow) |
+| TP09 | Segurança com hash e JWT | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) |
+| TP10 | Validação básica de desempenho | ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow) |
 
 ## Observação
 

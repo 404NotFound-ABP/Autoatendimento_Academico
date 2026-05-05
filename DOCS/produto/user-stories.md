@@ -4,7 +4,7 @@ Organizadas por área do produto, seguindo a estrutura Como / Quero / Para.
 
 ## Atendimento ao Usuário
 
-### US01 • O sistema deve permitir escolher o curso ou perfil logo no início do atendimento.
+### DW01 • O sistema deve permitir escolher o curso ou perfil logo no início do atendimento.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **Requisitos relacionados:** RF01
@@ -19,7 +19,7 @@ Organizadas por área do produto, seguindo a estrutura Como / Quero / Para.
 3. A escolha inicial deve ser registrada no contexto da sessão para uso no restante da navegação.
 4. O usuário deve conseguir reiniciar o atendimento e escolher outra opção inicial sem recarregar o sistema.
 
-### US02 • O sistema deve permitir navegar por menus e submenus em formato de chatbot.
+### DW02 • O sistema deve permitir navegar por menus e submenus em formato de chatbot.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **Requisitos relacionados:** RF01
@@ -34,7 +34,7 @@ Organizadas por área do produto, seguindo a estrutura Como / Quero / Para.
 3. O sistema deve permitir voltar para a etapa anterior e retornar ao menu inicial.
 4. Quando o fluxo chegar a uma resposta final, o atendimento deve oferecer os próximos passos possíveis.
 
-### US03 • O sistema deve permitir consultas diretas no autoatendimento.
+### DW03 • O sistema deve permitir consultas diretas no autoatendimento.
 
 - **Prioridade:** ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow)
 - **Requisitos relacionados:** RF01, RF02
@@ -49,7 +49,7 @@ Organizadas por área do produto, seguindo a estrutura Como / Quero / Para.
 3. Quando houver correspondência válida, o sistema deve exibir a resposta relacionada ao tema consultado.
 4. Quando não houver correspondência suficiente, o sistema deve orientar o usuário a seguir pela navegação guiada ou encaminhar a dúvida à secretaria.
 
-### US04 • O sistema deve apresentar respostas resumidas, objetivas e padronizadas.
+### DW04 • O sistema deve apresentar respostas resumidas, objetivas e padronizadas.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **Requisitos relacionados:** RF01, RF02, RP05
@@ -64,7 +64,7 @@ Organizadas por área do produto, seguindo a estrutura Como / Quero / Para.
 3. O texto não deve expor termos internos do sistema nem informações técnicas desnecessárias ao usuário final.
 4. Quando houver evidências cadastradas, a resposta deve manter o vínculo com a fonte correspondente.
 
-### US05 • O sistema deve exibir evidências documentais vinculadas às respostas.
+### DW05 • O sistema deve exibir evidências documentais vinculadas às respostas.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **Requisitos relacionados:** RF02, RP05
@@ -79,7 +79,7 @@ Organizadas por área do produto, seguindo a estrutura Como / Quero / Para.
 3. A evidência exibida deve estar vinculada à resposta atualmente apresentada ao usuário.
 4. Se uma resposta não possuir evidência cadastrada, o sistema não deve inventar fonte nem trecho documental.
 
-### US10 • O sistema deve permitir encaminhar perguntas à Secretaria Acadêmica.
+### TP04 • O sistema deve permitir encaminhar perguntas à Secretaria Acadêmica.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **Requisitos relacionados:** RF05
@@ -94,7 +94,7 @@ Organizadas por área do produto, seguindo a estrutura Como / Quero / Para.
 3. A pergunta deve ser salva com status inicial Em aberto e com registro de data e hora.
 4. Após o envio, o usuário deve visualizar uma mensagem de confirmação do recebimento da dúvida.
 
-### US12 • O sistema deve permitir que o usuário avalie sua satisfação com o atendimento.
+### DW06 • O sistema deve permitir que o usuário avalie sua satisfação com o atendimento.
 
 - **Prioridade:** ![Prioridade Baixa](https://img.shields.io/badge/Prioridade-Baixa-green)
 - **Requisitos relacionados:** RF07
@@ -111,7 +111,7 @@ Organizadas por área do produto, seguindo a estrutura Como / Quero / Para.
 
 ## Perfis, Administração Interna e Conteúdo
 
-### US06 • O sistema deve contemplar os perfis de aluno, Secretaria Acadêmica e administrador.
+### TP01 • O sistema deve contemplar os perfis de aluno, Secretaria Acadêmica e administrador.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **Requisitos relacionados:** RF03
@@ -126,7 +126,7 @@ Organizadas por área do produto, seguindo a estrutura Como / Quero / Para.
 3. As funcionalidades internas devem considerar o perfil do usuário autenticado.
 4. A identificação de perfil deve estar refletida no backend e na navegação disponível para cada papel.
 
-### US07 • O sistema deve permitir ao administrador gerenciar menus, submenus e respostas do chatbot.
+### TP02 • O sistema deve permitir ao administrador gerenciar menus, submenus e respostas do chatbot.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **Requisitos relacionados:** RF04
@@ -141,7 +141,7 @@ Organizadas por área do produto, seguindo a estrutura Como / Quero / Para.
 3. O sistema deve impedir acesso dessa funcionalidade a perfis que não sejam administrador.
 4. Ao excluir um nó com dependências, o sistema deve tratar a integridade dos dados antes de concluir a operação.
 
-### US08 • O sistema deve permitir ao administrador gerenciar documentos oficiais, chunks e metadados.
+### BD01 • O sistema deve permitir ao administrador gerenciar documentos oficiais, chunks e metadados.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **Requisitos relacionados:** RF02, RF04
@@ -156,7 +156,7 @@ Organizadas por área do produto, seguindo a estrutura Como / Quero / Para.
 3. Deve ser possível editar ou remover documentos e evidências desatualizadas.
 4. A relação entre resposta, documento e metadados deve ser preservada para consulta posterior.
 
-### US09 • O sistema deve permitir ao administrador gerenciar usuários do perfil Secretaria Acadêmica.
+### TP03 • O sistema deve permitir ao administrador gerenciar usuários do perfil Secretaria Acadêmica.
 
 - **Prioridade:** ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow)
 - **Requisitos relacionados:** RF04, RNF09
@@ -173,7 +173,7 @@ Organizadas por área do produto, seguindo a estrutura Como / Quero / Para.
 
 ## Secretaria e Rastreabilidade
 
-### US11 • O sistema deve permitir à Secretaria Acadêmica listar e atualizar o status das perguntas recebidas.
+### TP05 • O sistema deve permitir à Secretaria Acadêmica listar e atualizar o status das perguntas recebidas.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **Requisitos relacionados:** RF06
@@ -188,7 +188,7 @@ Organizadas por área do produto, seguindo a estrutura Como / Quero / Para.
 3. A secretaria deve conseguir alterar o status para Em aberto, Em atendimento ou Respondida.
 4. Usuários não autenticados ou sem papel de secretaria não devem acessar essa funcionalidade.
 
-### US13 • O sistema deve registrar logs completos das interações e permitir sua consulta administrativa.
+### BD02 • O sistema deve registrar logs completos das interações e permitir sua consulta administrativa.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **Requisitos relacionados:** RF04, RF08
@@ -205,7 +205,7 @@ Organizadas por área do produto, seguindo a estrutura Como / Quero / Para.
 
 ## Segurança e Controle de Acesso
 
-### US14 • O sistema deve autenticar usuários internos, controlar acesso por papel e proteger as rotas administrativas.
+### TP06 • O sistema deve autenticar usuários internos, controlar acesso por papel e proteger as rotas administrativas.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **Requisitos relacionados:** RF09, RF10, RF11, RNF08, RNF09, RP06

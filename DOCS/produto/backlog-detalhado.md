@@ -21,7 +21,7 @@ Cada item abaixo relaciona a user story ao requisito funcional correspondente e 
 
 ## Atendimento ao Usuário
 
-### RF01 (US01) • O sistema deve permitir escolher o curso ou perfil logo no início do atendimento.
+### RF01 (DW01) • O sistema deve permitir escolher o curso ou perfil logo no início do atendimento.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **User story:** Como aluno ou interessado externo, quero escolher meu curso ou perfil antes de iniciar a conversa, para que eu receba respostas adequadas ao meu contexto.
@@ -29,7 +29,7 @@ Cada item abaixo relaciona a user story ao requisito funcional correspondente e 
 - **DoD:** Exibir as quatro opções iniciais, registrar a escolha do usuário e encaminhar corretamente para o fluxo correspondente.
 - **Requisitos complementares:** Não se aplica.
 
-### RF01 (US02) • O sistema deve permitir navegar por menus e submenus em formato de chatbot.
+### RF01 (DW02) • O sistema deve permitir navegar por menus e submenus em formato de chatbot.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **User story:** Como usuário do autoatendimento, quero navegar por menus e submenus guiados, para que eu localize informações sem depender de atendimento humano imediato.
@@ -37,7 +37,7 @@ Cada item abaixo relaciona a user story ao requisito funcional correspondente e 
 - **DoD:** Carregar menus a partir do banco, permitir navegação hierárquica com voltar e encerrar cada ramo com a resposta esperada.
 - **Requisitos complementares:** Não se aplica.
 
-### RF01, RF02 (US03) • O sistema deve permitir consultas diretas no autoatendimento.
+### RF01, RF02 (DW03) • O sistema deve permitir consultas diretas no autoatendimento.
 
 - **Prioridade:** ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow)
 - **User story:** Como usuário do autoatendimento, quero fazer consultas diretas quando eu já souber o assunto desejado, para que eu encontre respostas com mais rapidez.
@@ -45,7 +45,7 @@ Cada item abaixo relaciona a user story ao requisito funcional correspondente e 
 - **DoD:** Permitir a consulta direta, localizar respostas cadastradas quando houver aderência e orientar o usuário quando a busca não resolver o caso.
 - **Requisitos complementares:** Não se aplica.
 
-### RF01, RF02 (US04) • O sistema deve apresentar respostas resumidas, objetivas e padronizadas.
+### RF01, RF02 (DW04) • O sistema deve apresentar respostas resumidas, objetivas e padronizadas.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **User story:** Como usuário do autoatendimento, quero receber respostas claras e padronizadas ao final de cada fluxo, para que eu entenda a orientação sem ambiguidades.
@@ -53,7 +53,7 @@ Cada item abaixo relaciona a user story ao requisito funcional correspondente e 
 - **DoD:** Apresentar respostas padronizadas nos fluxos finais, mantendo linguagem objetiva e coerência com o conteúdo oficial do desafio.
 - **Requisitos complementares:** RP05.
 
-### RF02 (US05) • O sistema deve exibir evidências documentais vinculadas às respostas.
+### RF02 (DW05) • O sistema deve exibir evidências documentais vinculadas às respostas.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **User story:** Como usuário do autoatendimento, quero visualizar o trecho documental que sustenta a resposta recebida, para que eu confie na orientação fornecida pelo sistema.
@@ -61,7 +61,7 @@ Cada item abaixo relaciona a user story ao requisito funcional correspondente e 
 - **DoD:** Exibir evidência documental com nome do arquivo, página e seção sempre que houver vínculo cadastrado para a resposta.
 - **Requisitos complementares:** RP05.
 
-### RF05 (US10) • O sistema deve permitir encaminhar perguntas à Secretaria Acadêmica.
+### RF05 (TP04) • O sistema deve permitir encaminhar perguntas à Secretaria Acadêmica.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **User story:** Como usuário do autoatendimento, quero enviar minha dúvida para a secretaria quando o chatbot não resolver meu problema, para que eu receba retorno humano sobre o caso.
@@ -69,7 +69,7 @@ Cada item abaixo relaciona a user story ao requisito funcional correspondente e 
 - **DoD:** Exibir o formulário no fim do atendimento, salvar a dúvida com os dados informados e confirmar o recebimento ao usuário.
 - **Requisitos complementares:** Não se aplica.
 
-### RF07 (US12) • O sistema deve permitir que o usuário avalie sua satisfação com o atendimento.
+### RF07 (DW06) • O sistema deve permitir que o usuário avalie sua satisfação com o atendimento.
 
 - **Prioridade:** ![Prioridade Baixa](https://img.shields.io/badge/Prioridade-Baixa-green)
 - **User story:** Como usuário do autoatendimento, quero registrar se gostei ou não gostei da interação, para que meu feedback fique registrado para a equipe.
@@ -79,7 +79,7 @@ Cada item abaixo relaciona a user story ao requisito funcional correspondente e 
 
 ## Perfis, Administração Interna e Conteúdo
 
-### RF03 (US06) • O sistema deve contemplar os perfis de aluno, Secretaria Acadêmica e administrador.
+### RF03 (TP01) • O sistema deve contemplar os perfis de aluno, Secretaria Acadêmica e administrador.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **User story:** Como equipe do projeto, quero ter perfis de acesso definidos para público e área interna, para que cada usuário visualize apenas as funcionalidades compatíveis com seu papel.
@@ -87,7 +87,7 @@ Cada item abaixo relaciona a user story ao requisito funcional correspondente e 
 - **DoD:** Disponibilizar os três perfis previstos no desafio, mantendo acesso público para aluno e acesso autenticado para os perfis internos.
 - **Requisitos complementares:** Não se aplica.
 
-### RF04 (US07) • O sistema deve permitir ao administrador gerenciar menus, submenus e respostas do chatbot.
+### RF04 (TP02) • O sistema deve permitir ao administrador gerenciar menus, submenus e respostas do chatbot.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **User story:** Como administrador, quero criar, editar e excluir menus e respostas do autoatendimento, para que o conteúdo do chatbot fique atualizado sem depender de alterações manuais no código.
@@ -95,7 +95,7 @@ Cada item abaixo relaciona a user story ao requisito funcional correspondente e 
 - **DoD:** Permitir ao administrador manter menus e respostas pelo painel interno, com persistência correta e reflexo imediato na navegação.
 - **Requisitos complementares:** Não se aplica.
 
-### RF02, RF04 (US08) • O sistema deve permitir ao administrador gerenciar documentos oficiais, chunks e metadados.
+### RF02, RF04 (BD01) • O sistema deve permitir ao administrador gerenciar documentos oficiais, chunks e metadados.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **User story:** Como administrador, quero cadastrar e manter documentos oficiais e seus trechos indexados, para que as evidências do autoatendimento permaneçam atualizadas e rastreáveis.
@@ -103,7 +103,7 @@ Cada item abaixo relaciona a user story ao requisito funcional correspondente e 
 - **DoD:** Cadastrar, editar e remover documentos e trechos indexados, preservando o vínculo entre evidência e resposta final.
 - **Requisitos complementares:** Não se aplica.
 
-### RF04 (US09) • O sistema deve permitir ao administrador gerenciar usuários do perfil Secretaria Acadêmica.
+### RF04 (TP03) • O sistema deve permitir ao administrador gerenciar usuários do perfil Secretaria Acadêmica.
 
 - **Prioridade:** ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow)
 - **User story:** Como administrador, quero cadastrar, editar e desativar usuários da secretaria, para que o acesso ao painel interno fique sob controle institucional.
@@ -113,7 +113,7 @@ Cada item abaixo relaciona a user story ao requisito funcional correspondente e 
 
 ## Secretaria e Rastreabilidade
 
-### RF06 (US11) • O sistema deve permitir à Secretaria Acadêmica listar e atualizar o status das perguntas recebidas.
+### RF06 (TP05) • O sistema deve permitir à Secretaria Acadêmica listar e atualizar o status das perguntas recebidas.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **User story:** Como secretaria acadêmica, quero acompanhar as perguntas enviadas pelos usuários e atualizar seus status, para que eu controle o andamento dos atendimentos internos.
@@ -121,7 +121,7 @@ Cada item abaixo relaciona a user story ao requisito funcional correspondente e 
 - **DoD:** Listar as dúvidas recebidas, permitir a mudança de status e persistir as atualizações com controle de acesso adequado.
 - **Requisitos complementares:** Não se aplica.
 
-### RF04, RF08 (US13) • O sistema deve registrar logs completos das interações e permitir sua consulta administrativa.
+### RF04, RF08 (BD02) • O sistema deve registrar logs completos das interações e permitir sua consulta administrativa.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **User story:** Como administrador, quero consultar os registros das interações realizadas no autoatendimento, para que eu acompanhe o fluxo navegado, as dúvidas enviadas e o feedback registrado.
@@ -131,7 +131,7 @@ Cada item abaixo relaciona a user story ao requisito funcional correspondente e 
 
 ## Segurança e Controle de Acesso
 
-### RF09, RF10, RF11 (US14) • O sistema deve autenticar usuários internos, controlar acesso por papel e proteger as rotas administrativas.
+### RF09, RF10, RF11 (TP06) • O sistema deve autenticar usuários internos, controlar acesso por papel e proteger as rotas administrativas.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **User story:** Como secretaria acadêmica ou administrador, quero fazer login com segurança e acessar somente as funcionalidades autorizadas ao meu perfil, para que o painel interno fique protegido contra acessos indevidos.
@@ -143,7 +143,7 @@ Cada item abaixo relaciona a user story ao requisito funcional correspondente e 
 
 Itens de sustentação técnica e acadêmica que garantem aderência às restrições, aos requisitos não funcionais e ao formato de entrega pedido no desafio.
 
-### BT01 • Modelar o banco PostgreSQL e o repositório de conhecimento com DDL e DML explícitos.
+### BD03 • Modelar o banco PostgreSQL e o repositório de conhecimento com DDL e DML explícitos.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **Requisitos relacionados:** RP03, RNF03.
@@ -151,7 +151,7 @@ Itens de sustentação técnica e acadêmica que garantem aderência às restri�
 - **DoR:** Modelo de dados aprovado, entidades identificadas e scripts iniciais de banco planejados.
 - **DoD:** Disponibilizar o esquema do PostgreSQL com DDL e DML aplicados e dados iniciais suficientes para sustentar o chatbot.
 
-### BT02 • Construir o frontend em React com TypeScript com foco em clareza e responsividade.
+### DW07 • Construir o frontend em React com TypeScript com foco em clareza e responsividade.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **Requisitos relacionados:** RP01, RNF01.
@@ -159,7 +159,7 @@ Itens de sustentação técnica e acadêmica que garantem aderência às restri�
 - **DoR:** Fluxos principais definidos, navegação de telas planejada e padrão visual escolhido para o projeto.
 - **DoD:** Executar o frontend em React com TypeScript, cobrindo desktop e mobile para os fluxos públicos e internos previstos.
 
-### BT03 • Construir o backend HTTP em Node.js com TypeScript e documentar suas rotas.
+### TP07 • Construir o backend HTTP em Node.js com TypeScript e documentar suas rotas.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **Requisitos relacionados:** RP02, RNF03.
@@ -167,7 +167,7 @@ Itens de sustentação técnica e acadêmica que garantem aderência às restri�
 - **DoR:** Contrato das rotas definido, regras de negócio priorizadas e estrutura do projeto backend preparada.
 - **DoD:** Disponibilizar a API em Node.js com TypeScript e documentar os endpoints necessários para integração com o frontend.
 
-### BT04 • Containerizar a aplicação completa e subir o ambiente com Docker Compose.
+### TP08 • Containerizar a aplicação completa e subir o ambiente com Docker Compose.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **Requisitos relacionados:** RNF05, RNF06, RP04.
@@ -175,7 +175,7 @@ Itens de sustentação técnica e acadêmica que garantem aderência às restri�
 - **DoR:** Imagens e dependências de cada serviço definidas, variáveis de ambiente mapeadas e estratégia de orquestração acordada.
 - **DoD:** Subir PostgreSQL, backend e frontend com Docker Compose, mantendo a aplicação funcional sem execução local fora dos containers.
 
-### BT05 • Produzir a documentação do repositório e os diagramas UML obrigatórios.
+### ES01 • Produzir a documentação do repositório e os diagramas UML obrigatórios.
 
 - **Prioridade:** ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow)
 - **Requisitos relacionados:** RNF04, RNF07.
@@ -183,7 +183,7 @@ Itens de sustentação técnica e acadêmica que garantem aderência às restri�
 - **DoR:** Escopo consolidado, arquitetura definida e padrão de documentação escolhido para o grupo.
 - **DoD:** Entregar os READMEs atualizados e os diagramas UML obrigatórios de forma coerente com a implementação realizada.
 
-### BT06 • Aplicar segurança operacional com JWT, hash de senha, expiração de token e variáveis de ambiente.
+### TP09 • Aplicar segurança operacional com JWT, hash de senha, expiração de token e variáveis de ambiente.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
 - **Requisitos relacionados:** RNF08, RNF09, RP06.
@@ -191,11 +191,10 @@ Itens de sustentação técnica e acadêmica que garantem aderência às restri�
 - **DoR:** Chaves sensíveis separadas em ambiente, biblioteca de hash definida e política de expiração acordada.
 - **DoD:** Usar JWT com expiração, armazenar senhas com hash seguro e evitar exposição de dados sensíveis nas respostas da API.
 
-### BT07 • Validar desempenho de consultas e recuperação de evidências para uso interativo.
+### TP10 • Validar desempenho de consultas e recuperação de evidências para uso interativo.
 
 - **Prioridade:** ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow)
 - **Requisitos relacionados:** RNF02.
 - **Descrição:** Verificar tempo de resposta do backend, consultas ao banco e exibição de trechos documentais nos principais fluxos do chatbot.
 - **DoR:** Cenários críticos de consulta definidos, pontos de medição escolhidos e massa de dados mínima disponível para testes.
 - **DoD:** Executar validação de desempenho nos fluxos principais e registrar que o tempo de resposta ficou adequado ao uso interativo do sistema.
-

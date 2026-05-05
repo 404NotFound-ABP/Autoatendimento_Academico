@@ -14,19 +14,19 @@
 
 Concluir a implementação integrada do sistema, fechando a área interna, a infraestrutura final, a validação técnica e a documentação complementar.
 
-## Escopo Comprometido
+## Sprint Backlog
 
 | ID | Frente | Item | Prioridade | Recorte da Sprint |
 | --- | --- | --- | --- | --- |
-| US07 | Administração e Operação | Gestão de menus e respostas pelo administrador | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | Permitir manutenção administrativa do conteúdo do chatbot. |
-| US08 | Administração e Operação | Gestão de documentos, chunks e metadados | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | Permitir manutenção das evidências e da base documental pelo administrador. |
-| US09 | Administração e Operação | Gestão de usuários da secretaria | ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow) | Permitir cadastro, edição e controle dos usuários internos da secretaria. |
-| US11 | Administração e Operação | Acompanhamento e atualização das dúvidas recebidas | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | Permitir listagem e mudança de status das perguntas encaminhadas. |
-| US12 | Administração e Operação | Avaliação de satisfação do atendimento | ![Prioridade Baixa](https://img.shields.io/badge/Prioridade-Baixa-green) | Registrar o feedback do usuário ao final do atendimento. |
-| US13 | Administração e Operação | Registro e consulta de logs administrativos | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | Registrar as interações e permitir consulta administrativa dos logs. |
-| BT04 | Infraestrutura e Implementação | Ambiente completo com Docker Compose | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | Consolidar a infraestrutura completa, incluindo o pgAdmin. |
-| BT07 | Infraestrutura e Implementação | Validação básica de desempenho | ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow) | Validar o comportamento do sistema nos fluxos principais de uso. |
-| BT05 | Documentação | Documentação e diagramas UML | ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow) | Produzir o diagrama de sequência nesta sprint. |
+| TP02 | Administração e Operação | Gestão de menus e respostas pelo administrador | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | Permitir manutenção administrativa do conteúdo do chatbot. |
+| BD01 | Administração e Operação | Gestão de documentos, chunks e metadados | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | Permitir manutenção das evidências e da base documental pelo administrador. |
+| TP03 | Administração e Operação | Gestão de usuários da secretaria | ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow) | Permitir cadastro, edição e controle dos usuários internos da secretaria. |
+| TP05 | Administração e Operação | Acompanhamento e atualização das dúvidas recebidas | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | Permitir listagem e mudança de status das perguntas encaminhadas. |
+| DW06 | Administração e Operação | Avaliação de satisfação do atendimento | ![Prioridade Baixa](https://img.shields.io/badge/Prioridade-Baixa-green) | Registrar o feedback do usuário ao final do atendimento. |
+| BD02 | Administração e Operação | Registro e consulta de logs administrativos | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | Registrar as interações e permitir consulta administrativa dos logs. |
+| TP08 | Infraestrutura e Implementação | Ambiente completo com Docker Compose | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | Consolidar a infraestrutura completa, incluindo o pgAdmin. |
+| TP10 | Infraestrutura e Implementação | Validação básica de desempenho | ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow) | Validar o comportamento do sistema nos fluxos principais de uso. |
+| ES01 | Documentação | Documentação e diagramas UML | ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow) | Produzir o diagrama de sequência nesta sprint. |
 
 ## Entregas
 
@@ -45,6 +45,10 @@ Concluir a implementação integrada do sistema, fechando a área interna, a inf
 
 - O detalhamento das tasks e a explosão em cards será feito posteriormente com o Scrum Master.
 
+## Burndown
+
+- O burndown será feito posteriormente com o Scrum Master.
+
 ## Riscos e Impedimentos
 
 - A consolidação da área interna depende da estabilidade das entregas técnicas realizadas na Sprint 02.
@@ -55,4 +59,4 @@ Concluir a implementação integrada do sistema, fechando a área interna, a inf
 
 - Esta sprint fecha a parte interna, a infraestrutura final e a validação do produto.
 - A documentação de testes entra como entrega complementar desta sprint, sem criar novo item no backlog do produto.
-- O pgAdmin entra como parte do BT04, junto da consolidação do ambiente completo com Docker Compose.
+- O pgAdmin entra como parte do TP08, junto da consolidação do ambiente completo com Docker Compose.
