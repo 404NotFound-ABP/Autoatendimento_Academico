@@ -46,19 +46,19 @@ O FAQtec propõe uma aplicação web de autoatendimento capaz de:
 
 ## Documentação 📁
 
-Toda a documentação do projeto está centralizada na pasta [DOCS](DOCS/README.md).
+Toda a documentação do projeto está centralizada na pasta [DOCS](https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/README.md).
 
 <p align="center">
-  <a href="DOCS/README.md">
-    <img alt="Documentação" src="https://img.shields.io/badge/Documenta%C3%A7%C3%A3o-DOCS-1F4B99?style=for-the-badge" />
+  <a href="https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/README.md">
+    <img alt="Documentação" src="https://img.shields.io/badge/Documenta%C3%A7%C3%A3o-https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS-1F4B99?style=for-the-badge" />
   </a>
-  <a href="DOCS/produto/backlog-do-produto.md">
+  <a href="https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/produto/backlog-do-produto.md">
     <img alt="Backlog do Produto" src="https://img.shields.io/badge/Backlog-Produto-0F766E?style=for-the-badge" />
   </a>
-  <a href="DOCS/produto/backlog-detalhado.md">
+  <a href="https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/produto/backlog-detalhado.md">
     <img alt="Backlog Detalhado" src="https://img.shields.io/badge/Backlog-Detalhado-7C3AED?style=for-the-badge" />
   </a>
-  <a href="DOCS/sprints/README.md">
+  <a href="https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/sprints/README.md">
     <img alt="Sprints" src="https://img.shields.io/badge/Sprints-Acompanhamento-C2410C?style=for-the-badge" />
   </a>
   <a href="2dsm%20ABP/app%20-%20aluno/README.md">
@@ -70,10 +70,10 @@ Toda a documentação do projeto está centralizada na pasta [DOCS](DOCS/README.
 
 | Categoria | Acesso |
 | --- | --- |
-| Índice geral | [DOCS/README.md](DOCS/README.md) |
-| Definition of Ready | [DOCS/processo/definition-of-ready.md](DOCS/processo/definition-of-ready.md) |
-| Definition of Done | [DOCS/processo/definition-of-done.md](DOCS/processo/definition-of-done.md) |
-| Referências e anexos | [DOCS/referencias/README.md](DOCS/referencias/README.md) |
+| Índice geral | [https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/README.md](https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/README.md) |
+| Definition of Ready | [https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/processo/definition-of-ready.md](https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/processo/definition-of-ready.md) |
+| Definition of Done | [https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/processo/definition-of-done.md](https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/processo/definition-of-done.md) |
+| Referências e anexos | [https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/referencias/README.md](https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/referencias/README.md) |
 
 <a id="backlog"></a>
 
@@ -83,10 +83,10 @@ O backlog do projeto está organizado em documentos complementares para facilita
 
 | Categoria | Acesso |
 | --- | --- |
-| Backlog do Produto | [DOCS/produto/backlog-do-produto.md](DOCS/produto/backlog-do-produto.md) |
-| Backlog Detalhado | [DOCS/produto/backlog-detalhado.md](DOCS/produto/backlog-detalhado.md) |
-| User stories | [DOCS/produto/user-stories.md](DOCS/produto/user-stories.md) |
-| Requisitos | [DOCS/produto/requisitos.md](DOCS/produto/requisitos.md) |
+| Backlog do Produto | [https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/produto/backlog-do-produto.md](https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/produto/backlog-do-produto.md) |
+| Backlog Detalhado | [https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/produto/backlog-detalhado.md](https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/produto/backlog-detalhado.md) |
+| User stories | [https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/produto/user-stories.md](https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/produto/user-stories.md) |
+| Requisitos | [https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/produto/requisitos.md](https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/produto/requisitos.md) |
 
 <a id="sprints"></a>
 
@@ -94,9 +94,9 @@ O backlog do projeto está organizado em documentos complementares para facilita
 
 | Sprint | Status | Entrega prevista | Documento |
 | --- | --- | --- | --- |
-| Sprint 01 | ![Status](https://img.shields.io/badge/Status-Em%20andamento-FACC15) | 04/05/2026 | [Abrir](DOCS/sprints/sprint-01/README.md) |
-| Sprint 02 | ![Status](https://img.shields.io/badge/Status-Planejamento-3B82F6) | 25/04/2026 | [Abrir](DOCS/sprints/sprint-02/README.md) |
-| Sprint 03 | ![Status](https://img.shields.io/badge/Status-Planejamento-3B82F6) | 22/06/2026 | [Abrir](DOCS/sprints/sprint-03/README.md) |
+| Sprint 01 | ![Status](https://img.shields.io/badge/Status-Em%20andamento-FACC15) | 04/05/2026 | [Abrir](https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/sprints/sprint-01/README.md) |
+| Sprint 02 | ![Status](https://img.shields.io/badge/Status-Planejamento-3B82F6) | 25/04/2026 | [Abrir](https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/sprints/sprint-02/README.md) |
+| Sprint 03 | ![Status](https://img.shields.io/badge/Status-Planejamento-3B82F6) | 22/06/2026 | [Abrir](https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/sprints/sprint-03/README.md) |
 
 ## Estrutura do Repositório 📂
 
@@ -122,11 +122,11 @@ O backlog do projeto está organizado em documentos complementares para facilita
 ### Organização das Pastas 📋
 
 - `2dsm ABP/`: Aplicação principal com frontend, backend, banco e orquestração local.
-- `2dsm ABP/backend/src/uploads`: Pasta oclearnde serão armazenados os chunks.
+- `2dsm ABP/backend/src/uploads`: Pasta onde serão armazenados os chunks.
 - `2dsm ABP/init`: DDL e seed do banco de dados.
 
 ### End-Points Back-End [PORT: 3666] 🚪
-- `Rota SWAGGER`: http://localhost:3666/api-docs/
+- `Rota SWAGGER`: http://localhost:3666/api-https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/
 - `Rota BackEnd publico`: http://localhost:3666/api/  
 - `Rota BackEnd ADMIN`: http://localhost:3666/admin/  
 
