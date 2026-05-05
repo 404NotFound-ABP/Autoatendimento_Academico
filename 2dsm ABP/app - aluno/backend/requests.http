@@ -1,0 +1,187 @@
+@baseUrl = http://localhost:3666
+@adminToken = {{login_admin.response.body.token}}
+@secretariaToken = {{login_secretaria.response.body.token}}
+
+# ─── AUTH ────────────────────────────────────────────────────────────────────
+
+### Login admin (credenciais corretas)
+# @name login_admin
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@fatec.sp.gov.br",
+  "password": "Admin@123"
+}
+
+###
+
+### Login secretaria (credenciais corretas)
+# @name login_secretaria
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "secretaria@fatec.sp.gov.br",
+  "password": "secretaria123"
+}
+
+###
+
+### Login com senha errada → 401 Credenciais inválidas
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@fatec.sp.gov.br",
+  "password": "senhaerrada"
+}
+
+###
+
+### Login com e-mail inexistente → 401 Credenciais inválidas
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "fantasma@fatec.sp.gov.br",
+  "password": "123"
+}
+
+###
+
+### Login sem body → erro de validação
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{}
+
+###
+
+### GET /auth/me — usuário logado (admin)
+GET {{baseUrl}}/auth/me
+Authorization: Bearer {{adminToken}}
+
+###
+
+### GET /auth/me — usuário logado (secretaria)
+GET {{baseUrl}}/auth/me
+Authorization: Bearer {{secretariaToken}}
+
+###
+
+### GET /auth/me — sem token → 401 Token não fornecido
+GET {{baseUrl}}/auth/me
+
+###
+
+### GET /auth/me — token inválido → 401 Token inválido
+GET {{baseUrl}}/auth/me
+Authorization: Bearer token.invalido.aqui
+
+# ─── ADMIN › USUÁRIOS ────────────────────────────────────────────────────────
+
+###
+
+### GET /admin/usuarios — sem token → 401
+GET {{baseUrl}}/admin/usuarios
+
+###
+
+### GET /admin/usuarios — como admin → 200
+GET {{baseUrl}}/admin/usuarios
+Authorization: Bearer {{adminToken}}
+
+###
+
+### GET /admin/usuarios — como secretaria → 403 Acesso negado
+GET {{baseUrl}}/admin/usuarios
+Authorization: Bearer {{secretariaToken}}
+
+###
+
+### POST /admin/usuarios — como admin → 200
+POST {{baseUrl}}/admin/usuarios
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "email": "novo@fatec.sp.gov.br",
+  "password": "senha123",
+  "role": "SECRETARIA",
+  "name": "Novo Usuário"
+}
+
+###
+
+### POST /admin/usuarios — como secretaria → 403 Acesso negado
+POST {{baseUrl}}/admin/usuarios
+Authorization: Bearer {{secretariaToken}}
+Content-Type: application/json
+
+{
+  "email": "novo@fatec.sp.gov.br",
+  "password": "senha123",
+  "role": "SECRETARIA",
+  "name": "Novo Usuário"
+}
+
+# ─── ADMIN › PERGUNTAS ───────────────────────────────────────────────────────
+
+###
+
+### GET /admin/perguntas — como admin → 200
+GET {{baseUrl}}/admin/perguntas
+Authorization: Bearer {{adminToken}}
+
+###
+
+### GET /admin/perguntas — como secretaria → 200
+GET {{baseUrl}}/admin/perguntas
+Authorization: Bearer {{secretariaToken}}
+
+###
+
+### GET /admin/perguntas — sem token → 401
+GET {{baseUrl}}/admin/perguntas
+
+###
+
+### PATCH /admin/perguntas/:id/status — como admin → 200
+PATCH {{baseUrl}}/admin/perguntas/1/status
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+  "status": "aprovada"
+}
+
+###
+
+### PATCH /admin/perguntas/:id/status — como secretaria → 200
+PATCH {{baseUrl}}/admin/perguntas/1/status
+Authorization: Bearer {{secretariaToken}}
+Content-Type: application/json
+
+{
+  "status": "reprovada"
+}
+
+# ─── ADMIN › LOGS ────────────────────────────────────────────────────────────
+
+###
+
+### GET /admin/logs — como admin → 200
+GET {{baseUrl}}/admin/logs
+Authorization: Bearer {{adminToken}}
+
+###
+
+### GET /admin/logs — como secretaria → 403 Acesso negado
+GET {{baseUrl}}/admin/logs
+Authorization: Bearer {{secretariaToken}}
+
+###
+
+### GET /admin/logs — sem token → 401
+GET {{baseUrl}}/admin/logs
