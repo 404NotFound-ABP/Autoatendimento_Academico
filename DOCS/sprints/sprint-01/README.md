@@ -36,7 +36,7 @@ Entregar um MVP apresentável do fluxo público do FAQtec, validando a navegaç�
 
 FIGMA: https://www.figma.com/design/nxX4kUKGSKeNLARNj0iMDf/ChatBoot--Fatec?node-id=0-1&t=9pcagDnITzTyB96i-0
 
-(Adicionar o link do diagrama de casos de uso quando estiver finalizado.)
+DIAGRAMA UML (USE CASE) : https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/diagrama/UseCase%20Diagram.png
 
 ## Tasks
 
