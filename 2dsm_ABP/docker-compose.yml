@@ -1,0 +1,37 @@
+services:
+  db:
+    image: postgres:15-alpine
+    env_file: .env
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init:/docker-entrypoint-initdb.d
+    networks:
+      - fatec_network_secrataria
+
+  backend:
+    build: ./backend
+    env_file: .env
+    ports:
+      - "${PORT}:${PORT}"
+    depends_on:
+      - db
+    networks:
+      - fatec_network_secrataria
+
+  # frontend:
+  #   build: ./frontend
+  #   ports:
+  #     - "${PORT_FRONTEND}:${PORT_FRONTEND}"
+    
+
+networks:
+  fatec_network_secrataria:
+
+volumes:
+  postgres_data:

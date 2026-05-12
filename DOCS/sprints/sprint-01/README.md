@@ -2,7 +2,7 @@
 
 ## Status
 
-![Status](https://img.shields.io/badge/Status-Em%20andamento-FACC15)
+![Status](https://img.shields.io/badge/Status-Concluido-success)
 
 ## Período
 
@@ -67,11 +67,11 @@ Use esta tabela para acompanhar todas as tasks do projeto. Marque ⬜ para pende
 | ES01.5 | Desenvolver Backlog da Sprint 3                                   | Felipe, Luiza                                       | 27/04 |     2     |   ✅   |
 | ES01.6 | Desenvolver tasks da Sprint 1                                     | Felipe, Luiza                                       | 28/04 |     2     |   ✅   |
 | ES01.7 | Desenvolver tasks da Sprint 2                                     | Felipe, Luiza                                       | 29/04 |     2     |   ✅   |
-| ES01.8 | Desenvolver tasks da Sprint 3                                     | Felipe, Luiza                                       | 30/04 |     2     |   ⬜   |
+| ES01.8 | Desenvolver tasks da Sprint 3                                     | Felipe, Luiza                                       | 30/04 |     2     |   ✅   |
 
 ## Burndown
 
-<img width="1595" height="659" alt="burndown sprint 01" src="https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/sprints/sprint-01/burndown.png" />
+<img width="1595" height="659" alt="burndown sprint 01" src="DOCS/sprints/sprint-01/burndown.png" />
 
 ## Observações
 
