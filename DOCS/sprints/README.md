@@ -6,8 +6,8 @@ As sprints foram separadas do `README.md` principal. Cada ciclo possui sua próp
 
 | Sprint | Status | Entrega prevista | Frentes principais | Documento |
 | --- | --- | --- | --- | --- |
-| Sprint 01 | ![Status](https://img.shields.io/badge/Status-Em%20andamento-FACC15) | 04/05/2026 | Frontend e documentação | [Abrir](sprint-01/README.md) |
-| Sprint 02 | ![Status](https://img.shields.io/badge/Status-Planejamento-3B82F6) | 25/04/2026 | Frontend, backend, autenticação e documentação | [Abrir](sprint-02/README.md) |
+| Sprint 01 | ![Status](https://img.shields.io/badge/Status-Concluido-success) | 05/05/2026 | Frontend e documentação | [Abrir](sprint-01/README.md) |
+| Sprint 02 | ![Status](https://img.shields.io/badge/Status-Planejamento-3B82F6) | 25/05/2026 | Frontend, backend, autenticação e documentação | [Abrir](sprint-02/README.md) |
 | Sprint 03 | ![Status](https://img.shields.io/badge/Status-Planejamento-3B82F6) | 22/06/2026 | Administração, infraestrutura e documentação | [Abrir](sprint-03/README.md) |
 
 ## Legenda de Prioridade
