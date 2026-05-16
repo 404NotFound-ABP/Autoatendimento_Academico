@@ -2,7 +2,7 @@
 
 ## Status
 
-![Status](https://img.shields.io/badge/Status-Encerrada%20com%20carry--over-F59E0B)
+![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-success)
 
 ## Período
 
