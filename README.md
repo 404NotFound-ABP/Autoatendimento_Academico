@@ -83,7 +83,6 @@ O sistema deve funcionar como um chatbot conversacional capaz de:
 │   │   ├── sprints/
 │   │   └── README.md
 │   └── README.md
-├── README (1).md
 └── README.md
 ```
 
@@ -250,7 +249,7 @@ O backlog do projeto esta organizado em documentos complementares para facilitar
 
 | Sprint | Status | Entrega prevista | Frentes principais | Documento |
 | --- | --- | --- | --- | --- |
-| Sprint 01 | ![Status](https://img.shields.io/badge/Status-Encerrada%20com%20carry--over-F59E0B) | 05/05/2026 | Prototipo do fluxo publico e documentacao inicial | [Abrir](Autoatendimento_Academico/DOCS/sprints/sprint-01/README.md) |
+| Sprint 01 | ![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-success)| 05/05/2026 | Prototipo do fluxo publico e documentacao inicial | [Abrir](Autoatendimento_Academico/DOCS/sprints/sprint-01/README.md) |
 | Sprint 02 | ![Status](https://img.shields.io/badge/Status-Em%20andamento-FACC15) | 25/05/2026 | Integracao real, persistencia, seguranca minima e documentacao | [Abrir](Autoatendimento_Academico/DOCS/sprints/sprint-02/README.md) |
 | Sprint 03 | ![Status](https://img.shields.io/badge/Status-Planejamento-3B82F6) | 22/06/2026 | Area interna, operacao administrativa e refinamentos finais | [Abrir](Autoatendimento_Academico/DOCS/sprints/sprint-03/README.md) |
 
