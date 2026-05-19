@@ -7,7 +7,7 @@ interface ChatScreenProps {
   userType: string;
 }
 
-const COURSE_TABS = [
+const COURSE_TABS: { label: string; full: string }[] = [
   { label: 'DSM', full: 'Desenvolvimento de software multiplataforma' },
   { label: 'GEO', full: 'Geoprocessamento' },
   { label: 'MARH', full: 'Meio ambiente e recursos hídricos' },

@@ -245,7 +245,7 @@ interface RatingCardProps {
 export function RatingCard({ onRate }: RatingCardProps) {
   const [selected, setSelected] = useState<string | null>(null);
 
-  const ratings = [
+  const ratings: { emoji: string; label: string }[] = [
     { emoji: '😠', label: 'Ruim' },
     { emoji: '😐', label: 'Satisfatório' },
     { emoji: '🙂', label: 'Bom' },

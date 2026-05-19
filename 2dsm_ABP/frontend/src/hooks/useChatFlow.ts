@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import { COURSES } from '../data';
+
 
 
 export interface ChatItem {
@@ -291,7 +291,7 @@ export function useChatFlow(userType?: string) {
     setItems((prev) => prev.filter((i) => i.id !== id));
   }, []);
 
-  const withTyping = useCallback((cb, delay = 1000) => {
+  const withTyping = useCallback((cb: () => void, delay: number = 1000) => {
     const typingId = uid();
     setItems((prev) => [...prev, { id: typingId, type: 'typing' }]);
     setTimeout(() => {
@@ -408,7 +408,7 @@ export function useChatFlow(userType?: string) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [withTyping, addItem, askSatisfacao]);
 
-  const askCourseTopics = useCallback((course) => {
+  const askCourseTopics = useCallback((course: string) => {
     const courseData = CURSO_DATA[course];
     if (!courseData) return;
 

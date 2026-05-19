@@ -24,10 +24,14 @@ services:
     networks:
       - fatec_network_secrataria
 
-  # frontend:
-  #   build: ./frontend
-  #   ports:
-  #     - "${PORT_FRONTEND}:${PORT_FRONTEND}"
+  frontend:
+    build: ./frontend
+    ports:
+       - "5175:5173"
+    depends_on:
+      - backend
+    networks:
+      - fatec_network_secrataria
     
 
 networks:
