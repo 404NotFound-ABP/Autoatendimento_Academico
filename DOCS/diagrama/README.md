@@ -4,7 +4,7 @@ Esta pasta centraliza os diagramas UML e os modelos visuais usados para explicar
 
 ## Status dos diagramas
 
-| Artefato | Arquivo | Status | Observacao |
+| Artefato | Arquivo | Status | Observação |
 | --- | --- | --- | --- |
 | Diagrama de Casos de Uso | `UseCase Diagram.png` e `UseCase Diagram.asta` | Disponível | Deve ser revisado para melhorar a legibilidade e o alinhamento com a implementação real |
 | Diagrama de Classes | - | Planejado para Sprint 2 | Necessário para atender à rubrica da Sprint 2 |

@@ -1,14 +1,14 @@
 # FAQtec
 
 <p align="center">
-  <strong>Aplicacao web de autoatendimento academico para a Secretaria Academica da Fatec Jacarei.</strong>
+  <strong>Aplicação web de autoatendimento acadêmico para a Secretaria Acadêmica da Fatec Jacareí.</strong>
 </p>
 
 <p align="center">
   <a href="#contexto-do-desafio">Contexto</a> •
   <a href="#arquitetura-geral">Arquitetura</a> •
-  <a href="#como-executar">Execucao</a> •
-  <a href="#documentacao">Documentacao</a>
+  <a href="#como-executar">Execução</a> •
+  <a href="#documentacao">Documentação</a>
 </p>
 
 ---
@@ -17,82 +17,80 @@
 
 ## Contexto do desafio 📝
 
-O **FAQtec** nasce do desafio academico proposto para o ABP 2026-1 da Fatec Jacarei: reduzir a sobrecarga da Secretaria Academica em duvidas recorrentes de alunos e interessados externos, especialmente sobre horarios, calendario academico, dispensa de disciplinas, estagio supervisionado e estrutura curricular.
+O **FAQtec** nasce do desafio acadêmico proposto para o ABP 2026-1 da Fatec Jacareí: reduzir a sobrecarga da Secretaria Acadêmica em dúvidas recorrentes de alunos e interessados externos, especialmente sobre horários, calendário acadêmico, dispensa de disciplinas, estágio supervisionado e estrutura curricular.
 
-O desafio oficial solicitado pelo cliente interno esta registrado em [Autoatendimento_Academico/DOCS/referencias/Desafio.pdf](Autoatendimento_Academico/DOCS/referencias/Desafio.pdf).
+O desafio oficial solicitado pelo cliente interno está registrado em [DOCS/referencias/Desafio.pdf](DOCS/referencias/Desafio.pdf).
 
 ## Objetivo do sistema ✅
 
 O sistema deve funcionar como um chatbot conversacional capaz de:
 
-- conduzir o usuario por uma arvore de navegacao com menus e submenus;
-- permitir consultas sobre temas academicos recorrentes;
+- conduzir o usuário por uma árvore de navegação com menus e submenus;
+- permitir consultas sobre temas acadêmicos recorrentes;
 - apresentar respostas objetivas e padronizadas;
-- exibir evidencias documentais quando houver vinculo com a resposta;
-- encaminhar duvidas nao resolvidas para a Secretaria Academica.
+- exibir evidências documentais quando houver vínculo com a resposta;
+- encaminhar dúvidas não resolvidas para a Secretaria Acadêmica.
 
-## Estado atual do repositorio 🔎
+## Estado atual do repositório 🔎
 
-- O frontend atual ja possui um fluxo publico navegavel, mas ainda depende fortemente de dados mockados.
-- O backend em TypeScript ja expoe rotas HTTP e documentacao Swagger, mas a separacao completa em camadas e a protecao das rotas administrativas fazem parte do trabalho da Sprint 2.
-- O banco PostgreSQL ja possui schema e seed iniciais, mas a modelagem ainda esta em revisao para sustentar documentos, chunks, evidencias e logs de forma mais completa.
-- O replanejamento das correcoes apontadas pelo professor foi incorporado ao backlog do produto, aos READMEs das sprints e a documentacao principal do repositorio.
+- O frontend atual já possui um fluxo público navegável, mas ainda depende fortemente de dados mockados locais.
+- O backend em TypeScript já expõe rotas HTTP e documentação Swagger, mas a separação completa em camadas e a proteção das rotas administrativas fazem parte do trabalho da Sprint 2.
+- O banco PostgreSQL já possui schema e seed iniciais, mas a modelagem ainda está em revisão para sustentar documentos, chunks, evidências e logs de forma mais completa.
+- O replanejamento das correções apontadas pelo professor foi incorporado ao backlog do produto, aos READMEs das sprints e à documentação principal do repositório.
 
 <a id="arquitetura-geral"></a>
 
 ## Arquitetura geral 🧱
 
-| Camada | Papel no projeto | Situacao atual |
+| Camada | Papel no projeto | Situação atual |
 | --- | --- | --- |
-| Frontend | Interface do chatbot e futuros paineis internos | Implementado em React + TypeScript, com fluxo publico inicial |
-| Backend | API HTTP, regras de negocio, autenticacao e integracao com banco | Implementado em Node.js + Express + TypeScript |
-| Banco de dados | Persistencia dos nos de navegacao, usuarios, perguntas, logs e evidencias | Implementado em PostgreSQL, com schema e seed iniciais |
-| Documentacao | Requisitos, backlog, sprints, processo e diagramas | Mantida na pasta `Autoatendimento_Academico/DOCS/` |
+| Frontend | Interface do chatbot e futuros painéis internos | Implementado em React + TypeScript, com fluxo público inicial |
+| Backend | API HTTP, regras de negócio, autenticação e integração com banco | Implementado em Node.js + Express + TypeScript |
+| Banco de dados | Persistência dos nós de navegação, usuários internos, perguntas, logs e evidências | Implementado em PostgreSQL, com schema e seed iniciais |
+| Documentação | Requisitos, backlog, sprints, processo e diagramas | Mantida na pasta `DOCS/` |
 
-## Estrutura do repositorio 📂
+## Estrutura do repositório 📂
 
 ```text
 .
-├── Autoatendimento_Academico/
-│   ├── 2dsm_ABP/
-│   │   ├── backend/
-│   │   │   ├── src/
-│   │   │   │   ├── controllers/
-│   │   │   │   ├── routes/
-│   │   │   │   ├── server/
-│   │   │   │   └── server.ts
-│   │   │   ├── package.json
-│   │   │   └── tsconfig.json
-│   │   ├── frontend/
-│   │   │   ├── src/
-│   │   │   │   ├── components/
-│   │   │   │   ├── hooks/
-│   │   │   │   └── App.tsx
-│   │   │   ├── package.json
-│   │   │   └── vite.config.ts
-│   │   ├── init/
-│   │   │   ├── 01_schema.sql
-│   │   │   └── 02_seed.sql
-│   │   ├── docker-compose.yml
-│   │   └── .gitignore
-│   ├── DOCS/
-│   │   ├── diagrama/
-│   │   ├── processo/
-│   │   ├── produto/
-│   │   ├── referencias/
-│   │   ├── sprints/
-│   │   └── README.md
+├── 2dsm_ABP/
+│   ├── backend/
+│   │   ├── src/
+│   │   │   ├── controllers/
+│   │   │   ├── routes/
+│   │   │   ├── server/
+│   │   │   └── server.ts
+│   │   ├── package.json
+│   │   └── tsconfig.json
+│   ├── frontend/
+│   │   ├── src/
+│   │   │   ├── components/
+│   │   │   ├── hooks/
+│   │   │   └── App.tsx
+│   │   ├── package.json
+│   │   └── vite.config.ts
+│   ├── init/
+│   │   ├── 01_schema.sql
+│   │   └── 02_seed.sql
+│   ├── docker-compose.yml
+│   └── .gitignore
+├── DOCS/
+│   ├── diagrama/
+│   ├── processo/
+│   ├── produto/
+│   ├── referencias/
+│   ├── sprints/
 │   └── README.md
 └── README.md
 ```
 
-### Organizacao das pastas 📋
+### Organização das pastas 📋
 
-- `Autoatendimento_Academico/2dsm_ABP/`: aplicacao principal com frontend, backend, banco e orquestracao local.
-- `Autoatendimento_Academico/2dsm_ABP/backend/src/`: controllers, rotas, servidor e regras de negocio.
-- `Autoatendimento_Academico/2dsm_ABP/frontend/src/`: componentes, hooks e interface principal do fluxo publico.
-- `Autoatendimento_Academico/2dsm_ABP/init/`: scripts SQL de schema e seed do banco.
-- `Autoatendimento_Academico/DOCS/`: documentacao funcional, tecnica e de processo.
+- `2dsm_ABP/`: aplicação principal com frontend, backend, banco e orquestração local.
+- `2dsm_ABP/backend/src/`: controllers, rotas, servidor e regras de negócio.
+- `2dsm_ABP/frontend/src/`: componentes, hooks e interface principal do fluxo público.
+- `2dsm_ABP/init/`: scripts SQL de schema e seed do banco.
+- `DOCS/`: documentação funcional, técnica e de processo.
 
 ## Tecnologias utilizadas 💻
 
@@ -118,51 +116,51 @@ O sistema deve funcionar como um chatbot conversacional capaz de:
   <img alt="Docker Compose" src="https://img.shields.io/badge/Docker_Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
 </p>
 
-## Variaveis de ambiente 🔐
+## Variáveis de ambiente 🔐
 
-Atualmente, o projeto utiliza variaveis de ambiente para conexao com o banco e configuracao do backend.
+Atualmente, o projeto utiliza variáveis de ambiente para conexão com o banco e configuração do backend.
 
-| Variavel | Uso |
+| Variável | Uso |
 | --- | --- |
 | `PORT` | Porta do backend |
 | `DB_HOST` | Host do PostgreSQL |
 | `DB_PORT` | Porta do PostgreSQL |
 | `DB_NAME` | Nome do banco |
-| `DB_USER` | Usuario do banco |
+| `DB_USER` | Usuário do banco |
 | `DB_PASSWORD` | Senha do banco |
 
 ### Onde configurar 📍
 
-- Para `docker compose`, crie um arquivo `.env` em `Autoatendimento_Academico/2dsm_ABP/`.
-- Para executar o backend localmente fora do Docker, replique as mesmas variaveis em `Autoatendimento_Academico/2dsm_ABP/backend/.env` ou exporte-as no ambiente de execucao.
+- Para `docker compose`, crie um arquivo `.env` em `2dsm_ABP/`.
+- Para executar o backend localmente fora do Docker, replique as mesmas variáveis em `2dsm_ABP/backend/.env` ou exporte-as no ambiente de execução.
 
 <a id="como-executar"></a>
 
 ## Como executar 🚀
 
-### Pre-requisitos
+### Pré-requisitos
 
 - Node.js 20 ou superior
 - npm
 - Docker e Docker Compose
 
-### Modo atual do repositorio
+### Modo atual do repositório
 
-No estado atual do codigo, o `docker-compose.yml` sobe banco e backend. O frontend ainda deve ser executado separadamente via Vite.
+No estado atual do código, o `docker-compose.yml` sobe banco e backend. O frontend ainda deve ser executado separadamente via Vite.
 
 #### 1. Subir banco e backend com Docker Compose
 
-Crie `Autoatendimento_Academico/2dsm_ABP/.env` com as variaveis listadas acima e execute:
+Crie `2dsm_ABP/.env` com as variáveis listadas acima e execute:
 
 ```bash
 docker compose up --build
 ```
 
-Comando a partir de `Autoatendimento_Academico/2dsm_ABP/`.
+Comando a partir de `2dsm_ABP/`.
 
 #### 2. Executar o frontend localmente
 
-Em `Autoatendimento_Academico/2dsm_ABP/frontend/`:
+Em `2dsm_ABP/frontend/`:
 
 ```bash
 npm install
@@ -171,7 +169,7 @@ npm run dev
 
 #### 3. Executar o backend localmente
 
-Em `Autoatendimento_Academico/2dsm_ABP/backend/`:
+Em `2dsm_ABP/backend/`:
 
 ```bash
 npm install
@@ -180,13 +178,13 @@ npm run dev
 
 ### Build
 
-Frontend, em `Autoatendimento_Academico/2dsm_ABP/frontend/`:
+Frontend, em `2dsm_ABP/frontend/`:
 
 ```bash
 npm run build
 ```
 
-Backend, em `Autoatendimento_Academico/2dsm_ABP/backend/`:
+Backend, em `2dsm_ABP/backend/`:
 
 ```bash
 npm run build
@@ -195,72 +193,72 @@ npm run build
 ## Endpoints principais 🌐
 
 - Swagger: `http://localhost:3666/api-docs`
-- API publica: `http://localhost:3666/api`
+- API pública: `http://localhost:3666/api`
 - Rotas administrativas atuais: `http://localhost:3666/admin`
 
-> Observacao: a protecao completa das rotas administrativas com JWT e RBAC faz parte do escopo priorizado da Sprint 2.
+> Observação: a proteção completa das rotas administrativas com JWT e RBAC faz parte do escopo priorizado da Sprint 2.
 
 <a id="documentacao"></a>
 
-## Documentacao 📁
+## Documentação 📁
 
-Toda a documentacao do projeto esta centralizada em `Autoatendimento_Academico/DOCS/`.
+Toda a documentação do projeto está centralizada em `DOCS/`.
 
 <p align="center">
-  <a href="Autoatendimento_Academico/DOCS/README.md">
-    <img alt="Documentacao" src="https://img.shields.io/badge/Documentacao-DOCS-1F4B99?style=for-the-badge" />
+  <a href="DOCS/README.md">
+    <img alt="Documentação" src="https://img.shields.io/badge/Documentacao-DOCS-1F4B99?style=for-the-badge" />
   </a>
-  <a href="Autoatendimento_Academico/DOCS/produto/backlog-do-produto.md">
+  <a href="DOCS/produto/backlog-do-produto.md">
     <img alt="Backlog do Produto" src="https://img.shields.io/badge/Backlog-Produto-0F766E?style=for-the-badge" />
   </a>
-  <a href="Autoatendimento_Academico/DOCS/produto/backlog-detalhado.md">
+  <a href="DOCS/produto/backlog-detalhado.md">
     <img alt="Backlog Detalhado" src="https://img.shields.io/badge/Backlog-Detalhado-7C3AED?style=for-the-badge" />
   </a>
-  <a href="Autoatendimento_Academico/DOCS/sprints/README.md">
+  <a href="DOCS/sprints/README.md">
     <img alt="Sprints" src="https://img.shields.io/badge/Sprints-Acompanhamento-C2410C?style=for-the-badge" />
   </a>
-  <a href="Autoatendimento_Academico/2dsm_ABP/frontend/README.md">
-    <img alt="Aplicacao" src="https://img.shields.io/badge/Aplicacao-README-334155?style=for-the-badge" />
+  <a href="2dsm_ABP/frontend/README.md">
+    <img alt="Aplicação" src="https://img.shields.io/badge/Aplicacao-README-334155?style=for-the-badge" />
   </a>
 </p>
 
-### Links rapidos 📎
+### Links rápidos 📎
 
 | Categoria | Acesso |
 | --- | --- |
-| Indice geral | [Autoatendimento_Academico/DOCS/README.md](Autoatendimento_Academico/DOCS/README.md) |
-| Definition of Ready | [Autoatendimento_Academico/DOCS/processo/definition-of-ready.md](Autoatendimento_Academico/DOCS/processo/definition-of-ready.md) |
-| Definition of Done | [Autoatendimento_Academico/DOCS/processo/definition-of-done.md](Autoatendimento_Academico/DOCS/processo/definition-of-done.md) |
-| Diagramas | [Autoatendimento_Academico/DOCS/diagrama/README.md](Autoatendimento_Academico/DOCS/diagrama/README.md) |
-| Referencias e anexos | [Autoatendimento_Academico/DOCS/referencias/README.md](Autoatendimento_Academico/DOCS/referencias/README.md) |
+| Índice geral | [DOCS/README.md](DOCS/README.md) |
+| Definition of Ready | [DOCS/processo/definition-of-ready.md](DOCS/processo/definition-of-ready.md) |
+| Definition of Done | [DOCS/processo/definition-of-done.md](DOCS/processo/definition-of-done.md) |
+| Diagramas | [DOCS/diagrama/README.md](DOCS/diagrama/README.md) |
+| Referências e anexos | [DOCS/referencias/README.md](DOCS/referencias/README.md) |
 
 ## Backlog 🧾
 
-O backlog do projeto esta organizado em documentos complementares para facilitar a visao geral, o refinamento e o acompanhamento das entregas.
+O backlog do projeto está organizado em documentos complementares para facilitar a visão geral, o refinamento e o acompanhamento das entregas.
 
 | Categoria | Acesso |
 | --- | --- |
-| Backlog do Produto | [Autoatendimento_Academico/DOCS/produto/backlog-do-produto.md](Autoatendimento_Academico/DOCS/produto/backlog-do-produto.md) |
-| Backlog Detalhado | [Autoatendimento_Academico/DOCS/produto/backlog-detalhado.md](Autoatendimento_Academico/DOCS/produto/backlog-detalhado.md) |
-| User stories | [Autoatendimento_Academico/DOCS/produto/user-stories.md](Autoatendimento_Academico/DOCS/produto/user-stories.md) |
-| Requisitos | [Autoatendimento_Academico/DOCS/produto/requisitos.md](Autoatendimento_Academico/DOCS/produto/requisitos.md) |
+| Backlog do Produto | [DOCS/produto/backlog-do-produto.md](DOCS/produto/backlog-do-produto.md) |
+| Backlog Detalhado | [DOCS/produto/backlog-detalhado.md](DOCS/produto/backlog-detalhado.md) |
+| Histórias de Usuário | [DOCS/produto/user-stories.md](DOCS/produto/user-stories.md) |
+| Requisitos | [DOCS/produto/requisitos.md](DOCS/produto/requisitos.md) |
 
 ## Cronograma das sprints 📅
 
 | Sprint | Status | Entrega prevista | Frentes principais | Documento |
 | --- | --- | --- | --- | --- |
-| Sprint 01 | ![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-success)| 05/05/2026 | Prototipo do fluxo publico e documentacao inicial | [Abrir](Autoatendimento_Academico/DOCS/sprints/sprint-01/README.md) |
-| Sprint 02 | ![Status](https://img.shields.io/badge/Status-Em%20andamento-FACC15) | 25/05/2026 | Integracao real, persistencia, seguranca minima e documentacao | [Abrir](Autoatendimento_Academico/DOCS/sprints/sprint-02/README.md) |
-| Sprint 03 | ![Status](https://img.shields.io/badge/Status-Planejamento-3B82F6) | 22/06/2026 | Area interna, operacao administrativa e refinamentos finais | [Abrir](Autoatendimento_Academico/DOCS/sprints/sprint-03/README.md) |
+| Sprint 01 | ![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-success) | 05/05/2026 | Protótipo do fluxo público e documentação inicial | [Abrir](DOCS/sprints/sprint-01/README.md) |
+| Sprint 02 | ![Status](https://img.shields.io/badge/Status-Em%20andamento-FACC15) | 25/05/2026 | Integração real, persistência, frontend público e documentação | [Abrir](DOCS/sprints/sprint-02/README.md) |
+| Sprint 03 | ![Status](https://img.shields.io/badge/Status-Planejamento-3B82F6) | 22/06/2026 | Área interna, operação administrativa e refinamentos finais | [Abrir](DOCS/sprints/sprint-03/README.md) |
 
-## Aplicacao
+## Aplicação
 
-A documentacao tecnica dos modulos permanece nos READMEs especificos:
+A documentação técnica dos módulos permanece nos READMEs específicos:
 
-- [README principal do projeto interno](Autoatendimento_Academico/README.md)
-- [README do frontend](Autoatendimento_Academico/2dsm_ABP/frontend/README.md)
-- [README do backend](Autoatendimento_Academico/2dsm_ABP/backend/README.md)
-- [README do banco e scripts SQL](Autoatendimento_Academico/2dsm_ABP/init/README.md)
+- [README principal do projeto interno](2dsm_ABP/)
+- [README do frontend](2dsm_ABP/frontend/README.md)
+- [README do backend](2dsm_ABP/backend/README.md)
+- [README do banco e scripts SQL](2dsm_ABP/init/README.md)
 
 ## Status do projeto 📌
 
@@ -268,11 +266,11 @@ A documentacao tecnica dos modulos permanece nos READMEs especificos:
   <img alt="Status" src="https://img.shields.io/badge/Status-Em%20desenvolvimento%20e%20replanejamento-2563EB?style=for-the-badge" />
 </p>
 
-Projeto academico em desenvolvimento. O replanejamento atual prioriza a conversao do fluxo mockado da Sprint 1 em um MVP publico real, integrado e reproduzivel na Sprint 2.
+Projeto acadêmico em desenvolvimento. O replanejamento atual prioriza a conversão do fluxo mockado da Sprint 1 em um MVP público real, integrado e reproduzível na Sprint 2.
 
 ## Equipe 💼
 
-| Funcao | Nome | Contatos |
+| Função | Nome | Contatos |
 | --- | --- | :---: |
 | Project Owner | Luiza Goncalves Manchini | [![GitHub](https://img.shields.io/badge/GitHub-Perfil-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/luiza-manchini) [![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luiza-manchini-b51a7b336/) |
 | Scrum Master | Felipe Faria Machado | [![GitHub](https://img.shields.io/badge/GitHub-Perfil-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/felipefmac) [![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/felipefariamachado) |
@@ -285,5 +283,5 @@ Projeto academico em desenvolvimento. O replanejamento atual prioriza a conversa
 ---
 
 <p align="center">
-  Desenvolvido para o ABP 2026-1 • Fatec Jacarei
+  Desenvolvido para o ABP 2026-1 • Fatec Jacareí
 </p>

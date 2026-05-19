@@ -12,23 +12,24 @@
 
 ## Objetivo
 
-Entregar um MVP apresentavel do fluxo publico do FAQtec, validando a navegacao inicial do chatbot e as primeiras telas do frontend com dados mockados, sem compromisso de integrar a aplicacao ao backend ou ao banco nesta etapa.
+Entregar um MVP apresentável do fluxo público do FAQtec, validando a navegação inicial do chatbot e as primeiras telas do frontend com dados mockados, sem compromisso de integrar a aplicação ao backend ou ao banco nesta etapa.
 
 ## Sprint Backlog
 
 | ID | Frente | Item | Prioridade | Recorte da Sprint |
 | --- | --- | --- | --- | --- |
 | DW01 | Frontend | Escolha inicial de curso ou perfil | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | Implementar a tela inicial com as opções `DSM`, `Geoprocessamento`, `MARH` e `Não sou aluno`. |
-| DW02 | Frontend | Navegação por menus e submenus | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | Implementar a navegação local com base no mockup e dados mockados, cobrindo pelo menos dois fluxos de demonstração. |
+| DW02 | Frontend | Navegação por menus e submenus | ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red) | Implementar a navegação local com base no mockup e em dados mockados, cobrindo pelo menos dois fluxos de demonstração. |
 | DW04 | Frontend | Respostas resumidas e padronizadas | ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow) | Exibir uma resposta final padronizada ao fim dos fluxos implementados nesta sprint. |
 | DW07 | Frontend | Frontend em React com TypeScript | ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow) | Estruturar a base do frontend e entregar as primeiras telas navegáveis do chatbot. |
 | ES01 | Documentação | Documentação e diagramas UML | ![Prioridade Baixa](https://img.shields.io/badge/Prioridade-Baixa-green) | Produzir a documentação inicial do repositório e o diagrama de casos de uso. |
 
-## Resultado do Ciclo
+## Resultado do ciclo
 
-- A sprint entregou um prototipo funcional do frontend com fluxo local para demonstracao.
-- O objetivo de navegacao foi cumprido apenas em modo mockado, sem integracao real com API ou banco.
-- A documentacao da sprint foi iniciada, mas permaneceu com lacunas de execucao, estrutura e coerencia entre repositório e implementacao.
+- A sprint entregou um protótipo funcional do frontend com fluxo local para demonstração.
+- O objetivo de navegação foi cumprido apenas em modo mockado, sem integração real com API ou banco.
+- A tela inicial, a navegação e as respostas finais permaneceram dependentes de dados locais.
+- A documentação da sprint foi iniciada, mas permaneceu com lacunas de execução, estrutura e coerência entre repositório e implementação.
 
 ## Entregas
 
@@ -41,18 +42,19 @@ Entregar um MVP apresentavel do fluxo publico do FAQtec, validando a navegacao i
 ## Evidências
 
 - Figma: <https://www.figma.com/design/nxX4kUKGSKeNLARNj0iMDf/ChatBoot--Fatec?node-id=0-1&t=9pcagDnITzTyB96i-0>
-- Diagrama UML de Casos de Uso: <https://github.com/404NotFound-ABP/Autoatendimento_Academico/blob/docs/DOCS/diagrama/UseCase%20Diagram.png>
+- Diagrama UML de Casos de Uso: [UseCase Diagram.png](../../diagrama/UseCase Diagram.png)
 
-## Retrospectiva Documentada
+## Retrospectiva documentada
 
-### O que ficou valido na sprint
+### O que ficou válido na sprint
 
 - A equipe conseguiu validar o fluxo inicial do chatbot para demonstração.
-- O conteúdo base do desafio foi organizado em textos e menus que podem servir de insumo para seed e integração futura.
+- O conteúdo-base do desafio foi organizado em textos e menus que podem servir de insumo para seed e integração futura.
 - A documentação de produto e de sprint ganhou uma primeira estrutura rastreável.
 
-### O que nao atendeu integralmente ao DoD do produto
+### O que não atendeu integralmente ao DoD do produto
 
+- `DW01`: a tela inicial foi entregue como protótipo, mas ainda sem integração com o fluxo real sustentado por API e banco.
 - `DW02`: a navegação foi entregue com dados mockados, sem leitura a partir do banco de dados.
 - `DW04`: as respostas foram demonstradas no frontend, mas sem integração com a base oficial do produto.
 - `ES01`: o README principal, os READMEs por pasta e a coerência estrutural do repositório não ficaram completos.
@@ -61,9 +63,10 @@ Entregar um MVP apresentavel do fluxo publico do FAQtec, validando a navegacao i
 
 | Item | Motivo do carry-over | Encaminhamento |
 | --- | --- | --- |
+| DW01 | Tela inicial ainda sem vínculo com o fluxo real do sistema | Revisar a escolha inicial e integrá-la ao fluxo público da Sprint 2 |
 | DW02 | Fluxo ainda local, sem API nem banco | Integrar a navegação real com backend e PostgreSQL |
 | DW04 | Respostas ainda dependentes do mock do frontend | Vincular respostas ao fluxo persistido e às evidências do domínio |
-| ES01 | Documentação e estrutura do repositório ainda incoerentes | Corrigir README, READMEs por pasta, diagramas e alinhamento doc x implementação |
+| ES01 | Documentação e estrutura do repositório ainda incoerentes | Corrigir README, READMEs por pasta, diagramas e alinhamento entre documentação e implementação |
 
 ## Tasks
 
@@ -101,5 +104,5 @@ Entregar um MVP apresentavel do fluxo publico do FAQtec, validando a navegacao i
 ## Observações
 
 - O escopo comprometido da Sprint 1 era de MVP demonstrável, e não de integração completa.
-- A partir da revisão do professor, a equipe passou a tratar `DW02`, `DW04` e `ES01` como itens reabertos na Sprint 2 para atender o DoD do produto.
+- A partir da revisão do professor, a equipe passou a tratar `DW01`, `DW02`, `DW04` e `ES01` como itens reabertos na Sprint 2 para atender ao DoD do produto.
 - A Sprint 2 concentra a conversão do protótipo em fluxo público real, com integração, persistência e documentação coerente.

@@ -1,15 +1,15 @@
 # Documentação do Projeto
 
-Esta pasta concentra a documentação principal do repositório. O `README.md` da raiz funciona como ponto de entrada e, aqui, ficam os anexos de produto, processo, sprint, referência e diagramas.
+Esta pasta concentra a documentação principal do repositório. O `README.md` da raiz funciona como ponto de entrada e, aqui, ficam os anexos de produto, processo, sprints, referências e diagramas.
 
-## Navegacao
+## Navegação
 
 ### Produto
 
 - [Requisitos](produto/requisitos.md)
 - [Backlog do produto](produto/backlog-do-produto.md)
 - [Backlog detalhado](produto/backlog-detalhado.md)
-- [User stories](produto/user-stories.md)
+- [Histórias de usuário](produto/user-stories.md)
 
 ### Processo
 
@@ -18,18 +18,18 @@ Esta pasta concentra a documentação principal do repositório. O `README.md` d
 
 ### Sprints
 
-- [Indice das sprints](sprints/README.md)
+- [Índice das sprints](sprints/README.md)
 - [Sprint 01](sprints/sprint-01/README.md)
 - [Sprint 02](sprints/sprint-02/README.md)
 - [Sprint 03](sprints/sprint-03/README.md)
 
 ### Diagramas
 
-- [Indice dos diagramas](diagrama/README.md)
+- [Índice dos diagramas](diagrama/README.md)
 
 ### Referências
 
-- [Anexos e documentos base](referencias/README.md)
+- [Anexos e documentos-base](referencias/README.md)
 
 ### Módulos da aplicação
 
@@ -41,10 +41,8 @@ Esta pasta concentra a documentação principal do repositório. O `README.md` d
 
 | Pasta | Papel |
 | --- | --- |
-| `DOCS/produto` | Requisitos, backlog e user stories do produto |
-| `DOCS/processo` | Definições de pronto/concluído, plano de ação e alinhamentos de processo |
+| `DOCS/produto` | Requisitos, backlog e histórias de usuário do produto |
+| `DOCS/processo` | Definition of Ready, Definition of Done e critérios de processo |
 | `DOCS/sprints` | Planejamento e acompanhamento de cada sprint |
 | `DOCS/diagrama` | Diagramas UML e seus índices |
 | `DOCS/referencias` | Documento oficial do desafio e referências usadas pela equipe |
-
-

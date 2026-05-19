@@ -8,7 +8,7 @@
 | RF02 | Repositório de conhecimento | O sistema deve manter uma base estruturada com nós de navegação, perguntas, respostas, documentos, chunks e metadados. |
 | RF03 | Perfis de usuário | O sistema deve atender os perfis Aluno, Secretaria Acadêmica e Administrador, com acessos distintos. |
 | RF04 | Gestão de conteúdo | O administrador deve poder gerenciar menus, respostas, documentos, usuários da secretaria e logs. |
-| RF05 | Encaminhamento de pergunta | Ao final do atendimento, o usuário deve poder enviar uma dúvida para a secretaria, com texto e e-mail institucional. |
+| RF05 | Encaminhamento de pergunta | Ao final do atendimento, o usuário deve poder enviar uma dúvida para a secretaria, com texto e e-mail para retorno, preferencialmente institucional quando aplicável. |
 | RF06 | Gestão de perguntas | A Secretaria Acadêmica deve poder listar perguntas recebidas e atualizar o status de cada uma. |
 | RF07 | Avaliação de satisfação | O usuário deve poder informar se gostou ou não da interação com o sistema. |
 | RF08 | Registro de logs | O sistema deve registrar navegação, perguntas enviadas, satisfação e data/hora de cada atendimento. |
@@ -23,7 +23,7 @@
 | RNF01 | Usabilidade e responsividade | A interface deve ser simples, clara e adaptada para navegadores e dispositivos móveis. |
 | RNF02 | Desempenho | O sistema deve responder rapidamente, inclusive em consultas ao banco e na recuperação de trechos documentais. |
 | RNF03 | Documentação técnica | O projeto deve incluir visão geral, modelo de dados, arquitetura, execução e documentação da API. |
-| RNF04 | Modelagem UML | O projeto deve apresentar diagramas de casos de uso, classes, sequencia e componentes. |
+| RNF04 | Modelagem UML | O projeto deve apresentar diagramas de casos de uso, classes, sequência e componentes. |
 | RNF05 | Containerização | O sistema deve rodar com Docker usando, no mínimo, containers de PostgreSQL, backend e frontend. |
 | RNF06 | Orquestração de containers | O ambiente deve poder ser iniciado com comando único usando ferramenta como Docker Compose. |
 | RNF07 | Documentação do repositório | O repositório deve ter READMEs, descrição das funcionalidades, estrutura, diagramas e instruções de execução. |

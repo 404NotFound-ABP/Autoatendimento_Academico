@@ -1,8 +1,8 @@
-# Requisitos e User Stories 📋
+# Histórias de Usuário
 
-Organizadas por área do produto, seguindo a estrutura Como / Quero / Para.
+Organizadas por sigla e descritas na estrutura Como / Quero / Para que, com seus respectivos critérios de aceitação.
 
-## Atendimento ao Usuário
+## Itens DW
 
 ### DW01 • O sistema deve permitir escolher o curso ou perfil logo no início do atendimento.
 
@@ -79,37 +79,38 @@ Organizadas por área do produto, seguindo a estrutura Como / Quero / Para.
 3. A evidência exibida deve estar vinculada à resposta atualmente apresentada ao usuário.
 4. Se uma resposta não possuir evidência cadastrada, o sistema não deve inventar fonte nem trecho documental.
 
-### TP04 • O sistema deve permitir encaminhar perguntas à Secretaria Acadêmica.
-
-- **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
-- **Requisitos relacionados:** RF05
-- **Como:** Usuário do autoatendimento.
-- **Quero:** Enviar minha dúvida para a secretaria quando o chatbot não resolver meu problema.
-- **Para que:** Receber retorno humano sobre o caso.
-
-**Critérios de aceitação**
-
-1. Ao final do atendimento, o sistema deve oferecer a opção de enviar uma pergunta à secretaria.
-2. O formulário deve solicitar texto da dúvida e e-mail para resposta, orientando o uso do e-mail institucional.
-3. A pergunta deve ser salva com status inicial Em aberto e com registro de data e hora.
-4. Após o envio, o usuário deve visualizar uma mensagem de confirmação do recebimento da dúvida.
-
 ### DW06 • O sistema deve permitir que o usuário avalie sua satisfação com o atendimento.
 
 - **Prioridade:** ![Prioridade Baixa](https://img.shields.io/badge/Prioridade-Baixa-green)
 - **Requisitos relacionados:** RF07
 - **Como:** Usuário do autoatendimento.
-- **Quero:** Registrar se gostei ou não gostei da interação.
+- **Quero:** Registrar minha avaliação sobre a interação.
 - **Para que:** Manter meu feedback registrado para a equipe.
 
 **Critérios de aceitação**
 
-1. Ao final do atendimento, o sistema deve disponibilizar as opções Gostei e Não gostei.
+1. Ao final do atendimento, o sistema deve disponibilizar pelo menos uma opção de avaliação de satisfação.
 2. O usuário deve conseguir registrar apenas uma avaliação por interação encerrada.
 3. A avaliação deve ser vinculada ao atendimento correspondente com data e hora.
 4. Após a avaliação, o sistema deve confirmar que o feedback foi registrado.
 
-## Perfis, Administração Interna e Conteúdo
+### DW08 • O sistema deve exibir uma tela de e-mail para envio de dúvidas ao final do atendimento.
+
+- **Prioridade:** ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow)
+- **Requisitos relacionados:** RF05
+- **Como:** Usuário do autoatendimento.
+- **Quero:** Informar meu e-mail e minha dúvida em uma tela própria do app.
+- **Para que:** Solicitar retorno da secretaria quando o chatbot não resolver meu caso.
+
+**Critérios de aceitação**
+
+1. Ao final do atendimento, o sistema deve oferecer acesso à tela ou ao formulário de e-mail.
+2. A interface deve exibir, no mínimo, um campo de e-mail e um campo de dúvida.
+3. Para alunos, a interface deve orientar o uso do e-mail institucional; para público externo, deve aceitar e-mail comum.
+4. O frontend deve validar o preenchimento mínimo antes do envio.
+5. Após o envio, o sistema deve exibir confirmação visual coerente com o fluxo do atendimento.
+
+## Itens TP
 
 ### TP01 • O sistema deve contemplar os perfis de aluno, Secretaria Acadêmica e administrador.
 
@@ -138,8 +139,70 @@ Organizadas por área do produto, seguindo a estrutura Como / Quero / Para.
 
 1. O administrador autenticado deve conseguir criar, editar e excluir nós de navegação e respostas finais.
 2. As alterações devem ser persistidas no banco de dados e refletidas na navegação do chatbot.
-3. O sistema deve impedir acesso dessa funcionalidade a perfis que não sejam administrador.
+3. O sistema deve impedir o acesso dessa funcionalidade a perfis que não sejam administrador.
 4. Ao excluir um nó com dependências, o sistema deve tratar a integridade dos dados antes de concluir a operação.
+
+### TP03 • O sistema deve permitir ao administrador gerenciar usuários do perfil Secretaria Acadêmica.
+
+- **Prioridade:** ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow)
+- **Requisitos relacionados:** RF04, RNF09
+- **Como:** Administrador.
+- **Quero:** Cadastrar, editar e desativar usuários da secretaria.
+- **Para que:** Manter o acesso ao painel interno sob controle institucional.
+
+**Critérios de aceitação**
+
+1. O administrador deve conseguir cadastrar, editar e desativar usuários do perfil Secretaria Acadêmica.
+2. Cada usuário interno deve possuir login, senha e papel definidos no sistema.
+3. As senhas não devem ser armazenadas em texto puro; devem usar hash seguro.
+4. Usuários sem papel de administrador não devem acessar essa gestão.
+
+### TP04 • O sistema deve permitir encaminhar perguntas à Secretaria Acadêmica.
+
+- **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
+- **Requisitos relacionados:** RF05
+- **Como:** Usuário do autoatendimento.
+- **Quero:** Encaminhar minha dúvida para a secretaria quando o chatbot não resolver meu problema.
+- **Para que:** Receber retorno humano sobre o caso.
+
+**Critérios de aceitação**
+
+1. O sistema deve receber os dados enviados pela tela ou pelo formulário de e-mail ao final do atendimento.
+2. A pergunta deve ser salva com status inicial Em aberto e com registro de data e hora.
+3. O envio deve permanecer vinculado ao e-mail informado para retorno posterior.
+4. Após o processamento, o usuário deve visualizar uma mensagem de confirmação do recebimento da dúvida.
+
+### TP05 • O sistema deve permitir à Secretaria Acadêmica listar e atualizar o status das perguntas recebidas.
+
+- **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
+- **Requisitos relacionados:** RF06
+- **Como:** Secretaria Acadêmica.
+- **Quero:** Acompanhar as perguntas enviadas pelos usuários e atualizar seus status.
+- **Para que:** Controlar o andamento dos atendimentos internos.
+
+**Critérios de aceitação**
+
+1. A Secretaria Acadêmica autenticada deve conseguir acessar a lista de perguntas enviadas pelos usuários.
+2. A listagem deve exibir pelo menos texto da dúvida, e-mail informado, status e data e hora de envio.
+3. A secretaria deve conseguir alterar o status para Em aberto, Em atendimento ou Respondida.
+4. Usuários não autenticados ou sem papel de secretaria não devem acessar essa funcionalidade.
+
+### TP06 • O sistema deve autenticar usuários internos, controlar acesso por papel e proteger as rotas administrativas.
+
+- **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
+- **Requisitos relacionados:** RF09, RF10, RF11, RNF08, RNF09, RP06
+- **Como:** Secretaria Acadêmica ou administrador.
+- **Quero:** Fazer login com segurança e acessar somente as funcionalidades autorizadas ao meu perfil.
+- **Para que:** Manter o painel interno protegido contra acessos indevidos.
+
+**Critérios de aceitação**
+
+1. Ao informar credenciais válidas, o usuário interno deve receber autenticação bem-sucedida no backend.
+2. A autenticação deve gerar JWT contendo identificador do usuário, papel e tempo de expiração.
+3. Rotas administrativas devem exigir token válido e papel apropriado antes de liberar acesso.
+4. Requisições sem autenticação ou com papel inadequado devem retornar erro apropriado sem expor informações sensíveis.
+
+## Itens BD
 
 ### BD01 • O sistema deve permitir ao administrador gerenciar documentos oficiais, chunks e metadados.
 
@@ -156,38 +219,6 @@ Organizadas por área do produto, seguindo a estrutura Como / Quero / Para.
 3. Deve ser possível editar ou remover documentos e evidências desatualizadas.
 4. A relação entre resposta, documento e metadados deve ser preservada para consulta posterior.
 
-### TP03 • O sistema deve permitir ao administrador gerenciar usuários do perfil Secretaria Acadêmica.
-
-- **Prioridade:** ![Prioridade Media](https://img.shields.io/badge/Prioridade-Media-yellow)
-- **Requisitos relacionados:** RF04, RNF09
-- **Como:** Administrador.
-- **Quero:** Cadastrar, editar e desativar usuários da secretaria.
-- **Para que:** Manter o acesso ao painel interno sob controle institucional.
-
-**Critérios de aceitação**
-
-1. O administrador deve conseguir cadastrar, editar e desativar usuários do perfil secretaria.
-2. Cada usuário interno deve possuir login, senha e papel definidos no sistema.
-3. As senhas não devem ser armazenadas em texto puro; devem usar hash seguro.
-4. Usuários sem papel de administrador não devem acessar essa gestão.
-
-## Secretaria e Rastreabilidade
-
-### TP05 • O sistema deve permitir à Secretaria Acadêmica listar e atualizar o status das perguntas recebidas.
-
-- **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
-- **Requisitos relacionados:** RF06
-- **Como:** Secretaria acadêmica.
-- **Quero:** Acompanhar as perguntas enviadas pelos usuários e atualizar seus status.
-- **Para que:** Controlar o andamento dos atendimentos internos.
-
-**Critérios de aceitação**
-
-1. A secretaria autenticada deve conseguir acessar a lista de perguntas enviadas pelos usuários.
-2. A listagem deve exibir pelo menos texto da dúvida, e-mail informado, status e data e hora de envio.
-3. A secretaria deve conseguir alterar o status para Em aberto, Em atendimento ou Respondida.
-4. Usuários não autenticados ou sem papel de secretaria não devem acessar essa funcionalidade.
-
 ### BD02 • O sistema deve registrar logs completos das interações e permitir sua consulta administrativa.
 
 - **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
@@ -202,20 +233,3 @@ Organizadas por área do produto, seguindo a estrutura Como / Quero / Para.
 2. O log deve armazenar perguntas enviadas à secretaria, registro de satisfação e data e hora da interação.
 3. Os registros devem ser persistidos sem expor dados sensíveis, como senha ou token.
 4. Quando a funcionalidade administrativa estiver disponível, o administrador deve conseguir consultar os logs de navegação.
-
-## Segurança e Controle de Acesso
-
-### TP06 • O sistema deve autenticar usuários internos, controlar acesso por papel e proteger as rotas administrativas.
-
-- **Prioridade:** ![Prioridade Alta](https://img.shields.io/badge/Prioridade-Alta-red)
-- **Requisitos relacionados:** RF09, RF10, RF11, RNF08, RNF09, RP06
-- **Como:** Secretaria acadêmica ou administrador.
-- **Quero:** Fazer login com segurança e acessar somente as funcionalidades autorizadas ao meu perfil.
-- **Para que:** Manter o painel interno protegido contra acessos indevidos.
-
-**Critérios de aceitação**
-
-1. Ao informar credenciais válidas, o usuário interno deve receber autenticação bem-sucedida no backend.
-2. A autenticação deve gerar JWT contendo identificador do usuário, papel e tempo de expiração.
-3. Rotas administrativas devem exigir token válido e papel apropriado antes de liberar acesso.
-4. Requisições sem autenticação ou com papel inadequado devem retornar erro apropriado sem expor informações sensíveis.
